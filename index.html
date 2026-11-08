@@ -511,16 +511,17 @@ footer a{color:#f2c979}
         <strong>Deals for your destination.</strong> <span id="dealForText">Pick a deal below and its button takes you to the trip form — we&rsquo;ll compare suppliers for your dates, not just one booking site.</span> <a href="#plan">Or skip straight to the trip form →</a>
       </div>
 
+      <div class="filters" id="promoFilters" role="group" aria-label="Filter promotions">
+        <button class="chipbtn promo-filter" data-pfilter="all" aria-pressed="true">All offers</button>
+        <button class="chipbtn promo-filter" data-pfilter="resort" aria-pressed="false">Resorts &amp; packages</button>
+        <button class="chipbtn promo-filter" data-pfilter="cruise" aria-pressed="false">Cruises</button>
+        <button class="chipbtn promo-filter" data-pfilter="tour" aria-pressed="false">Escorted tours</button>
+      </div>
+
       <!-- Hot deals render here from HOT_DEALS in the script. -->
       <div class="featured-promos" id="featuredWrap" hidden>
         <h3 style="font-size:1.5rem;margin:1.4rem 0 1rem">Hot deals right now</h3>
         <div class="grid" id="featuredGrid"></div>
-      </div>
-
-      <div class="filters" role="group" aria-label="Filter promotions">
-        <button class="chipbtn promo-filter" data-pfilter="all" aria-pressed="true">All offers</button>
-        <button class="chipbtn promo-filter" data-pfilter="resort" aria-pressed="false">Resorts &amp; packages</button>
-        <button class="chipbtn promo-filter" data-pfilter="cruise" aria-pressed="false">Cruises</button>
       </div>
 
       <div class="grid grid-2" id="promoGrid">
@@ -1022,7 +1023,9 @@ var INTEREST_FORM_URL = '';
     var esc = function(s){ var d=document.createElement('div'); d.innerHTML=s||''; var t=d.textContent; d.textContent=t; return d.innerHTML; };
     document.getElementById('featuredGrid').innerHTML = HOT_DEALS.map(function(p){
       // Deals always route to the trip form, never to a supplier's deal page.
-      return '<article class="card deal-card"><div class="card-body"><span class="tag">'+esc(p.tag||'Hot deal')+'</span>' +
+      var ptag = p.tag || '';
+      var pkind = /cruise/i.test(ptag) ? 'cruise' : (/tour/i.test(ptag) ? 'tour' : (/all-inclusive|resort|package/i.test(ptag) ? 'resort' : ''));
+      return '<article class="card deal-card" data-pkind="'+pkind+'"><div class="card-body"><span class="tag">'+esc(p.tag||'Hot deal')+'</span>' +
         '<p class="deal-brand">'+esc(p.brand)+'</p><h3>'+esc(p.title)+'</h3><p>'+esc(p.text)+'</p>' +
         '<a class="btn btn-primary" href="#plan" data-ask-deal="'+esc((p.brand||'')+' — '+(p.title||''))+'">Ask about this deal →</a></div></article>';
     }).join('');
@@ -1045,12 +1048,12 @@ var INTEREST_FORM_URL = '';
     document.getElementById('destEmpty').hidden = shown>0;
   });});
 
-  // Promo filter
-  var pBtns=document.querySelectorAll('[data-pfilter]');
+  // Promo filter — controls both the Hot Deals grid and the offers grid below it
+  var pBtns=document.querySelectorAll('.promo-filter[data-pfilter]');
   pBtns.forEach(function(b){ b.addEventListener('click',function(){
     pBtns.forEach(function(x){x.setAttribute('aria-pressed','false')}); b.setAttribute('aria-pressed','true');
     var f=b.getAttribute('data-pfilter');
-    document.querySelectorAll('#promoGrid .card').forEach(function(c){
+    document.querySelectorAll('#featuredGrid .card, #promoGrid .card').forEach(function(c){
       c.classList.toggle('hidden',!(f==='all'||(c.getAttribute('data-pkind')||'').split(' ').indexOf(f)>-1));
     });
   });});
