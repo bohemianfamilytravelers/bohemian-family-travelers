@@ -1,0 +1,1118 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="color-scheme" content="light dark">
+<link rel="icon" href="data:,">
+<link rel="preload" as="image" href="assets/hero-optimized.jpg" imagesrcset="assets/hero-optimized-sm.jpg 800w, assets/hero-optimized.jpg 1440w" imagesizes="100vw" fetchpriority="high">
+<title>Bohemian Family Travelers | Family Cruises, All-Inclusive &amp; Budget Travel</title>
+<meta name="description" content="Bohemian Family Travelers is a professional travel agency for Atlanta-based Bohemian Family Travelers plans family and group trips, cruises, all-inclusive resorts, and budget-friendly getaways with Jondrea Williams, CLIA-certified travel advisor. Text (404) 643-4749 or email bohemianfamilytravelers@gmail.com.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Caveat:wght@500;600&family=DM+Serif+Display:ital@0;1&family=Outfit:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#fbfaf7; --bg2:#f1ede4; --card:#ffffff; --ink:#172322; --muted:#5b6b68; --line:#ddd6c7;
+  --teal:#0f3d3a; --teal2:#14524d; --sand:#e9dfc9; --terra:#c05f2e; --terra-dark:#9a4a22;
+  --gold:#b98a2f; --chip:#eef3f1; --shadow:0 10px 30px rgba(15,61,58,.12);
+  --radius:18px;
+}
+@media (prefers-color-scheme: dark){
+  :root{ --bg:#0e1a19; --bg2:#122422; --card:#162a28; --ink:#eef3ef; --muted:#a9bcb6; --line:#2a4440; --chip:#1b3532; --sand:#2b3f35; --shadow:0 10px 30px rgba(0,0,0,.35); --terra:#e07f4a; --gold:#d9a94e; }
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;font-family:"Outfit",system-ui,sans-serif;background:var(--bg);color:var(--ink);line-height:1.6}
+a{color:var(--teal2)} @media(prefers-color-scheme:dark){a{color:#7fc7bb}}
+img{max-width:100%;display:block}
+.wrap{width:min(1180px,calc(100% - 32px));margin:0 auto}
+h1,h2,h3{font-family:"DM Serif Display",Georgia,serif;font-weight:400;line-height:1.08;margin:0}
+h2{font-size:clamp(1.9rem,4vw,2.7rem);letter-spacing:-.02em}
+.lede{color:var(--muted);font-size:1.08rem;max-width:65ch}
+.eyebrow{font-size:.78rem;letter-spacing:.16em;text-transform:uppercase;font-weight:700;color:var(--terra);margin:0 0 .6rem}
+.btn{display:inline-flex;align-items:center;gap:.5rem;border-radius:999px;padding:.78rem 1.25rem;font-weight:700;text-decoration:none;border:1px solid transparent;cursor:pointer;font-size:.98rem}
+.btn-primary{background:var(--terra);color:#fff}.btn-primary:hover{background:var(--terra-dark)}
+.btn-teal{background:var(--teal);color:#fff}.btn-teal:hover{background:var(--teal2)}
+.btn-ghost{background:transparent;color:var(--ink);border-color:var(--line)}
+.btn-light{background:#fff;color:#123}
+/* Nav */
+header{position:sticky;top:0;z-index:20;background:color-mix(in srgb,var(--bg) 92%, transparent);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+.nav{display:flex;align-items:center;justify-content:space-between;gap:1rem;padding:.85rem 0}
+.brand{display:flex;align-items:center;gap:.7rem;text-decoration:none;color:var(--ink)}
+.brand-mark{width:40px;height:40px;border-radius:50%;background:var(--teal);color:#f5d98b;display:grid;place-items:center;font-family:"DM Serif Display",serif;font-size:1.15rem;flex:0 0 auto}
+.brand strong{display:block;line-height:1;font-size:1.02rem;letter-spacing:.01em}
+.brand .brand-sub{display:block;font-size:.72rem;letter-spacing:.14em;text-transform:uppercase;color:var(--muted);margin-top:.2rem}
+.brand-mark{display:grid!important;place-items:center;text-align:center;line-height:1;padding:0}
+.navlinks{display:flex;gap:1.1rem;align-items:center;flex-wrap:wrap}
+.navlinks a{color:var(--ink);text-decoration:none;font-weight:600;font-size:.95rem}
+.navlinks a:hover{color:var(--terra)}
+@media(max-width:760px){.navlinks a:not(.btn){display:none}}
+/* Hero */
+.hero{position:relative;overflow:hidden;background:var(--teal);color:#fff}
+.hero-img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:.92}
+.hero-shade{position:absolute;inset:0;background:linear-gradient(90deg,rgba(7,32,30,.88) 0%,rgba(7,32,30,.62) 48%,rgba(7,32,30,.12) 100%)}
+.hero-inner{position:relative;padding:4.2rem 0 3.4rem;max-width:720px}
+.hero h1{font-size:clamp(2.4rem,6vw,4.2rem);color:#fff}
+.hero h1 em{color:#f2c979;font-style:italic}
+.hero p{font-size:1.13rem;color:#e6efec;max-width:58ch}
+.hero-ctas{display:flex;gap:.7rem;flex-wrap:wrap;margin-top:1.4rem}
+.hero-facts{display:flex;gap:.6rem;flex-wrap:wrap;margin-top:1.6rem}
+.fact{background:rgba(255,255,255,.13);border:1px solid rgba(255,255,255,.22);padding:.45rem .75rem;border-radius:999px;font-size:.86rem;font-weight:600}
+/* Sections */
+section{padding:3.4rem 0}
+.alt{background:var(--bg2)}
+.sec-head{display:flex;justify-content:space-between;gap:1.5rem;align-items:end;flex-wrap:wrap;margin-bottom:1.4rem}
+/* Filters */
+.filters{display:flex;gap:.5rem;flex-wrap:wrap;margin:1rem 0 1.2rem}
+.chipbtn{border:1px solid var(--line);background:var(--card);color:var(--ink);padding:.5rem .9rem;border-radius:999px;font-weight:700;cursor:pointer}
+.chipbtn[aria-pressed="true"]{background:var(--teal);color:#fff;border-color:var(--teal)}
+/* Cards */
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1rem}
+@media(max-width:920px){.grid{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:600px){.grid{grid-template-columns:1fr}}
+.card{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);overflow:hidden;box-shadow:var(--shadow)}
+.card img{width:100%;height:210px;object-fit:cover}
+.card-body{padding:1.1rem 1.15rem 1.25rem}
+.card h3{font-size:1.35rem;margin-bottom:.35rem}
+.card p{color:var(--muted);margin:.35rem 0 .8rem}
+.tag{display:inline-block;background:var(--chip);border:1px solid var(--line);padding:.22rem .55rem;border-radius:999px;font-size:.75rem;font-weight:700;letter-spacing:.04em;text-transform:uppercase}
+.card-link{font-weight:800;text-decoration:none}
+.promo-meta{font-size:.86rem;color:var(--muted);border-top:1px dashed var(--line);padding-top:.7rem;margin-top:.8rem}
+.price{font-size:1.5rem;font-weight:800;color:var(--teal)} @media(prefers-color-scheme:dark){.price{color:#8fd0c4}}
+/* Shore */
+.shore{display:grid;grid-template-columns:1.05fr .95fr;gap:1.4rem;align-items:stretch}
+@media(max-width:860px){.shore{grid-template-columns:1fr}}
+.shore-photo{border-radius:var(--radius);overflow:hidden;min-height:340px}
+.shore-photo img{width:100%;height:100%;object-fit:cover}
+.shore-box{background:var(--teal);color:#eaf2ef;border-radius:var(--radius);padding:1.6rem}
+.shore-box h3{color:#fff;font-size:1.8rem}
+.shore-box a{color:#f2c979;font-weight:700}
+.port-links{display:grid;grid-template-columns:1fr 1fr;gap:.6rem;margin-top:1rem}
+.port-links a{background:rgba(255,255,255,.09);border:1px solid rgba(255,255,255,.18);color:#fff;text-decoration:none;padding:.7rem .8rem;border-radius:12px;font-weight:700;font-size:.92rem}
+.port-links a:hover{background:rgba(255,255,255,.16)}
+/* Partners */
+.partners{display:grid;grid-template-columns:repeat(3,1fr);gap:1rem}
+@media(max-width:860px){.partners{grid-template-columns:1fr 1fr}}
+@media(max-width:560px){.partners{grid-template-columns:1fr}}
+.partner{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:1.05rem}
+.partner h3{font-family:"Outfit",sans-serif;font-weight:800;font-size:1.05rem}
+.partner p{color:var(--muted);font-size:.95rem;margin:.35rem 0 .7rem}
+/* Steps */
+.steps{display:grid;grid-template-columns:repeat(3,1fr);gap:1rem}
+@media(max-width:760px){.steps{grid-template-columns:1fr}}
+.step{border-top:3px solid var(--terra);padding-top:1rem}
+.step .num{font-family:"DM Serif Display",serif;font-size:2rem;color:var(--terra)}
+.step p{color:var(--muted)}
+/* Form */
+.formgrid{display:grid;grid-template-columns:1fr 1fr;gap:1rem}
+@media(max-width:760px){.formgrid{grid-template-columns:1fr}}
+.field label{display:block;font-weight:700;font-size:.9rem;margin-bottom:.35rem}
+.field input,.field select,.field textarea{width:100%;padding:.75rem .85rem;border-radius:10px;border:1px solid var(--line);background:var(--card);color:var(--ink);font:inherit}
+.full{grid-column:1/-1}
+.notice{background:#fff7e8;border:1px solid #e8cf9a;color:#5b4310;border-radius:12px;padding:1rem 1.1rem}
+@media(prefers-color-scheme:dark){.notice{background:#2a2110;color:#f0d48a;border-color:#5a451a}}
+/* FAQ */
+details{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:1rem 1.1rem;margin-bottom:.6rem}
+summary{font-weight:800;cursor:pointer}
+details p{color:var(--muted)}
+footer{background:var(--teal);color:#dbe9e5;padding:2.4rem 0}
+footer a{color:#f2c979}
+.footgrid{display:grid;grid-template-columns:1.5fr 1fr;gap:1.4rem}
+@media(max-width:760px){.footgrid{grid-template-columns:1fr}}
+.small{font-size:.88rem;color:var(--muted)} footer .small{color:#a9c4bd}
+.hidden{display:none!important}
+/* ===== Upgrade additions ===== */
+.brand-logo{width:42px;height:42px;flex:0 0 auto;display:block}
+.nav-phone{font-weight:700;text-decoration:none;color:var(--ink);white-space:nowrap}
+@media(max-width:980px){.nav-phone{display:none}}
+.hero-call{margin-top:1.1rem;color:#e6efec;font-size:1rem}
+.hero-call a{color:#f2c979;font-weight:800;text-decoration:none}
+.card-art{height:210px;display:block;width:100%}
+.card .tag + .tag{margin-left:.3rem}
+.port-links{grid-template-columns:1fr 1fr}
+.featured-promos{margin-bottom:2rem}
+.featured-promos .card{display:flex;flex-direction:column}
+.featured-promos .card img{height:190px}
+.booknote{display:flex;gap:1rem;align-items:flex-start;background:var(--card);border:1px solid var(--line);border-left:4px solid var(--terra);border-radius:12px;padding:1rem 1.15rem;margin-top:1.4rem}
+.booknote strong{display:block;margin-bottom:.2rem}
+.booknote p{margin:0;color:var(--muted)}
+.contact-strip{display:flex;flex-wrap:wrap;gap:.8rem 1.6rem;margin-top:1rem;font-weight:700}
+.contact-strip a{text-decoration:none}
+.form-actions{display:flex;gap:.6rem;flex-wrap:wrap;align-items:center;margin-top:1rem}
+.form-actions .small{margin-left:.3rem}
+.btn{white-space:nowrap}
+.hero-call a,.contact-strip a{white-space:nowrap}
+@media(max-width:560px){.brand .brand-sub{display:none}.nav .btn{padding:.6rem .95rem;font-size:.9rem}}
+.grid-2{grid-template-columns:repeat(2,1fr)}
+@media(max-width:600px){.grid-2{grid-template-columns:1fr}}
+.flights{display:grid;grid-template-columns:1fr 1fr;gap:2rem;align-items:center;background:var(--card);border:1px solid var(--line);border-radius:var(--radius);padding:2rem;box-shadow:var(--shadow)}
+@media(max-width:860px){.flights{grid-template-columns:1fr;padding:1.4rem}}
+.flights-copy{min-width:0}
+.flights-list{list-style:none;margin:0;padding:0;display:grid;gap:.9rem}
+.flights-list li{display:grid;gap:.15rem;padding-left:1.1rem;border-left:3px solid var(--gold)}
+.flights-list span{color:var(--muted);font-size:.95rem}
+.why{display:grid;grid-template-columns:repeat(4,1fr);gap:1.4rem;margin-top:1.6rem}
+@media(max-width:900px){.why{grid-template-columns:1fr 1fr}}
+@media(max-width:520px){.why{grid-template-columns:1fr}}
+.why h3{font-size:1.3rem;margin-bottom:.4rem}
+.why p{color:var(--muted);margin:0}
+.host{display:flex;flex-wrap:wrap;align-items:center;gap:.6rem 1rem;margin-top:1.8rem}
+.host-label{font-size:.78rem;letter-spacing:.14em;text-transform:uppercase;color:#a9c4bd;font-weight:700}
+.host img{height:44px;width:auto;background:#fff;border-radius:8px;padding:6px 10px}
+.host-name{font-weight:800;font-size:1.1rem;color:#fff;background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.22);border-radius:8px;padding:.35rem .8rem}
+.mobile-bar{display:none}
+@media(max-width:700px){
+  .mobile-bar{display:grid;grid-template-columns:1fr 1fr 1.6fr;gap:.5rem;position:fixed;left:0;right:0;bottom:0;z-index:30;background:var(--card);border-top:1px solid var(--line);padding:.6rem max(12px,env(safe-area-inset-right,0px)) calc(.6rem + env(safe-area-inset-bottom,0px)) max(12px,env(safe-area-inset-left,0px));box-shadow:0 -6px 20px rgba(0,0,0,.08)}
+  .mobile-bar a{text-align:center;padding:.7rem .5rem;border-radius:999px;font-weight:800;text-decoration:none;border:1px solid var(--line);color:var(--ink)}
+  .mobile-bar .mb-primary{background:var(--terra);border-color:var(--terra);color:#fff}
+  footer{padding-bottom:6rem}
+}
+[hidden]{display:none!important}
+.promo-wide{grid-column:1/-1;background:linear-gradient(120deg,var(--teal),var(--teal2));border-color:var(--teal);color:#fff}
+.promo-wide p{color:#d9e9e5}
+.promo-wide .tag{background:rgba(255,255,255,.14);border-color:rgba(255,255,255,.25);color:#fff}
+.promo-wide h3{color:#fff;font-size:1.7rem}
+.bookbar{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:1rem 2rem;align-items:center;background:var(--teal);color:#eaf2ef;border-radius:var(--radius);padding:1.3rem 1.5rem;margin-top:1.3rem}
+@media(max-width:860px){.bookbar{grid-template-columns:1fr}}
+.bookbar-head strong{display:block;font-size:1.15rem;color:#fff}
+.bookbar-head span{color:#bcd3cd;font-size:.95rem}
+.bookbar-links{display:flex;flex-wrap:wrap;gap:.5rem}
+.bookbar-links a{color:#fff;text-decoration:none;font-weight:700;font-size:.92rem;padding:.55rem .95rem;border-radius:999px;background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.22)}
+.bookbar-links a:hover{background:rgba(255,255,255,.2)}
+.advisor{display:grid;grid-template-columns:300px minmax(0,1fr);gap:2.4rem;align-items:center}
+@media(max-width:760px){.advisor{grid-template-columns:1fr}}
+.advisor-photo{width:100%;max-width:300px;aspect-ratio:4/5;object-fit:cover;border-radius:var(--radius);box-shadow:var(--shadow);background:var(--bg2)}
+.advisor-copy{display:grid;gap:.8rem}
+.advisor-role{margin:0;font-weight:700;color:var(--terra)}
+.badges{display:flex;flex-wrap:wrap;align-items:center;gap:.8rem}
+.badges img{height:64px;width:auto}
+.badges span{color:var(--muted);font-size:.92rem;flex:1 1 220px}
+.tools-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:.8rem;margin-top:1.4rem}
+@media(max-width:900px){.tools-grid{grid-template-columns:1fr 1fr}}
+@media(max-width:480px){.tools-grid{grid-template-columns:1fr}}
+.tools-grid a{display:grid;gap:.2rem;padding:1rem 1.1rem;background:var(--card);border:1px solid var(--line);border-radius:12px;text-decoration:none;color:var(--ink)}
+.tools-grid a:hover{border-color:var(--teal2)}
+.tools-grid span{color:var(--muted);font-size:.9rem}
+.host img{height:36px;width:auto;background:none;padding:0;border-radius:0}
+.clia{font-weight:800;font-size:.85rem;letter-spacing:.06em;text-transform:uppercase;color:var(--teal);border:2px solid var(--teal);border-radius:8px;padding:.45rem .7rem;flex:none!important}
+@media(prefers-color-scheme:dark){.clia{color:#8fd0c4;border-color:#8fd0c4}}
+
+.xgrid{display:grid;grid-template-columns:repeat(6,1fr);gap:.8rem}
+@media(max-width:980px){.xgrid{grid-template-columns:repeat(3,1fr)}}
+@media(max-width:520px){.xgrid{grid-template-columns:repeat(2,1fr)}}
+.xgrid figure,.gallery figure{margin:0;min-width:0}
+.xgrid img,.gallery img{width:100%;aspect-ratio:1/1;object-fit:cover;border-radius:12px;display:block;background:var(--bg2)}
+.xgrid figcaption,.gallery figcaption{font-size:.85rem;font-weight:600;color:var(--muted);margin-top:.4rem;line-height:1.3}
+.gallery{display:grid;grid-template-columns:repeat(4,1fr);gap:1rem;margin-top:1.4rem}
+@media(max-width:900px){.gallery{grid-template-columns:repeat(3,1fr)}}
+@media(max-width:560px){.gallery{grid-template-columns:repeat(2,1fr)}}
+.gallery .g-wide{grid-column:span 2;grid-row:span 2}
+.gallery .g-wide img{aspect-ratio:auto;height:calc(100% - 1.8rem);min-height:240px}
+@media(max-width:560px){.gallery .g-wide{grid-row:auto}.gallery .g-wide img{height:auto;aspect-ratio:4/3}}
+.flights-photo{width:100%;aspect-ratio:16/9;object-fit:cover;border-radius:12px;margin-bottom:1.1rem;display:block}
+.hero-img{object-position:center 60%}
+.navlinks{gap:.9rem}
+.navlinks a{font-size:.9rem}
+@media(max-width:1400px){.nav-phone{display:none}}
+@media(max-width:1180px){.brand .brand-sub{display:none}}
+.nav-phone{display:none!important}
+@media(max-width:1180px){.navlinks a.nav-extra{display:none}}
+
+/* Polaroids */
+:root{--paper:#fffdf8;--paper-ink:#2b2a27;--paper-date:#6d675c}
+.gallery{gap:1.8rem 1.4rem;padding:.6rem .4rem 1rem}
+.xgrid{gap:1.4rem 1rem;padding:.4rem .2rem .6rem}
+.polaroid{background:var(--paper);padding:10px 10px 0;box-shadow:0 1px 2px rgba(0,0,0,.18),0 10px 22px -8px rgba(0,0,0,.35);transform:rotate(var(--tilt,0deg));transition:transform .25s ease, box-shadow .25s ease;display:flex;flex-direction:column}
+.polaroid img{border-radius:0!important;aspect-ratio:1/1;object-fit:cover;width:100%;flex:1 1 auto;min-height:0}
+.polaroid figcaption{margin:0!important;padding:.55rem .2rem .7rem;text-align:center;display:grid;gap:0;color:var(--paper-ink)!important;font-family:"Caveat","Segoe Print","Bradley Hand",cursive;line-height:1.1}
+.pl-place{font-size:1.45rem;font-weight:600}
+.pl-date{font-size:1.1rem;color:var(--paper-date);min-height:1.2rem}
+.xgrid .pl-place{font-size:1.2rem}.xgrid .pl-date{font-size:1rem;min-height:1rem}
+.polaroid:nth-child(4n+1){--tilt:-2deg}.polaroid:nth-child(4n+2){--tilt:1.6deg}.polaroid:nth-child(4n+3){--tilt:-1deg}.polaroid:nth-child(4n){--tilt:2.2deg}
+.polaroid:hover{transform:rotate(0deg) scale(1.03);box-shadow:0 2px 4px rgba(0,0,0,.2),0 18px 30px -10px rgba(0,0,0,.4);z-index:2;position:relative}
+.gallery .g-wide img{aspect-ratio:auto;height:auto}
+.gallery .g-wide .pl-place{font-size:1.8rem}
+@media(max-width:560px){.gallery .g-wide img{aspect-ratio:4/3}.pl-place{font-size:1.25rem}}
+@media(prefers-reduced-motion:reduce){.polaroid{transition:none}.polaroid:hover{transform:rotate(var(--tilt))}}
+
+.soc{display:inline-flex;align-items:center;gap:.35rem;text-decoration:none;font-weight:700}
+.soc-ic{width:1.1em;height:1.1em;flex:none}
+.foot-soc{display:flex;gap:1rem;flex-wrap:wrap;margin-top:.6rem}
+.follow{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:1rem;margin-top:2rem;padding:1.1rem 1.3rem;border:1px solid var(--line);border-radius:14px;background:var(--card)}
+.follow p{margin:0;color:var(--muted)}
+.follow strong{display:block;color:var(--ink);font-size:1.05rem}
+.follow-links{display:flex;gap:.6rem;flex-wrap:wrap}
+.soc-btn .soc-ic{width:1.15em;height:1.15em}
+.gallery{grid-auto-flow:dense}
+.gallery .g-wide-r{grid-column:3 / span 2}
+@media(max-width:900px){.gallery .g-wide-r{grid-column:auto / span 2}}
+
+.photo-tag{font-family:"Caveat","Segoe Print","Bradley Hand",cursive;font-weight:600;background:var(--paper);color:var(--paper-ink);line-height:1.1;box-shadow:0 4px 14px -4px rgba(0,0,0,.45);transform:rotate(-2deg);z-index:2;white-space:nowrap}
+.hero-tag{position:absolute;right:max(16px,env(safe-area-inset-right,0px));bottom:16px;font-size:1.3rem;padding:.35rem .8rem}
+@media(max-width:600px){.hero-tag{font-size:1.05rem;right:auto;left:max(16px,env(safe-area-inset-left,0px));bottom:10px;white-space:normal;max-width:calc(100% - 32px)}.hero-inner{padding-bottom:4.2rem}}
+.card{position:relative}
+.card-tag{position:absolute;top:12px;right:12px;font-size:1.15rem;padding:.25rem .65rem}
+/* Groups band */
+.groups-band{background:var(--teal);color:#eaf2ef}
+.groups-band h2{color:#fff}
+.groups{display:grid;grid-template-columns:minmax(0,.9fr) minmax(0,1.1fr);gap:2.4rem;align-items:center}
+@media(max-width:860px){.groups{grid-template-columns:1fr}}
+.groups-photo img{width:100%;aspect-ratio:1/1;object-fit:cover;border-radius:var(--radius);box-shadow:0 18px 40px -16px rgba(0,0,0,.5)}
+.groups-copy{display:grid;gap:1rem;min-width:0}
+.groups-copy>p{color:#d6e6e2;margin:0;max-width:60ch}
+.group-types{list-style:none;margin:0;padding:0;display:flex;flex-wrap:wrap;gap:.5rem}
+.group-types li{background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.22);border-radius:999px;padding:.35rem .8rem;font-weight:600;font-size:.9rem}
+.group-how{display:grid;grid-template-columns:repeat(3,1fr);gap:1rem}
+@media(max-width:620px){.group-how{grid-template-columns:1fr}}
+.group-how div{display:grid;gap:.2rem;border-top:2px solid #f2c979;padding-top:.6rem}
+.group-how strong{color:#fff}
+.group-how span{color:#bcd3cd;font-size:.92rem}
+/* Protection */
+.protect{display:grid;grid-template-columns:minmax(0,1.1fr) minmax(0,.9fr);gap:1.6rem;align-items:start}
+@media(max-width:860px){.protect{grid-template-columns:1fr}}
+.protect-reasons{display:grid;grid-template-columns:1fr 1fr;gap:1rem}
+@media(max-width:560px){.protect-reasons{grid-template-columns:1fr}}
+.protect-reasons div{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:1rem 1.1rem}
+.protect-reasons h3{font-size:1.25rem;margin-bottom:.35rem}
+.protect-reasons p{margin:0;color:var(--muted);font-size:.95rem}
+.protect-box p{color:#d6e6e2}
+/* Docs */
+.docs{display:grid;grid-template-columns:repeat(3,1fr);gap:1rem;margin-top:1.4rem}
+@media(max-width:900px){.docs{grid-template-columns:1fr 1fr}}
+@media(max-width:560px){.docs{grid-template-columns:1fr}}
+.doc{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:1.1rem 1.15rem;border-top:3px solid var(--gold)}
+.doc h3{font-size:1.25rem;margin-bottom:.4rem}
+.doc p{margin:0;color:var(--muted);font-size:.95rem}
+/* Privacy */
+.privacy{padding-block:1.6rem}
+.privacy details{max-width:820px}
+.privacy-body h3{font-family:"Outfit",sans-serif;font-weight:800;font-size:1rem;margin:1rem 0 .2rem}
+.privacy-body p{margin:.2rem 0;color:var(--muted)}
+/* Misc */
+.hours{color:var(--muted);font-weight:600}
+.interest{display:flex;flex-wrap:wrap;align-items:center;gap:.8rem 1rem;margin-top:1.2rem}
+.interest span{color:var(--muted)}
+.deal-brand{margin:.4rem 0 0!important;font-weight:800;font-size:.85rem;letter-spacing:.06em;text-transform:uppercase;color:var(--terra)!important}
+.deal-card .card-body{display:flex;flex-direction:column;height:100%}
+.deal-card .btn{margin-top:auto;align-self:flex-start}
+.shore-box a.btn-light{color:#123}.shore-box a.btn-primary{color:#fff}
+.gform-frame{width:100%;border:0;border-radius:var(--radius);background:var(--card);box-shadow:var(--shadow);display:block}
+.terms-body{max-width:820px;margin-top:1rem;display:grid;gap:1rem}
+.terms-body h3{font-size:1.25rem;margin-bottom:.2rem}
+.terms-body p{margin:0;color:var(--muted)}
+</style>
+</head>
+<body>
+<header>
+  <div class="wrap nav">
+    <a class="brand" href="#top" aria-label="Bohemian Family Travelers home">
+      <svg class="brand-logo" viewBox="0 0 48 48" aria-hidden="true">
+        <circle cx="24" cy="24" r="23" fill="#0f3d3a"/>
+        <circle cx="24" cy="21" r="8.5" fill="#f2c979"/>
+        <path d="M6 30c3.2-2.4 6.4-2.4 9.6 0s6.4 2.4 9.6 0 6.4-2.4 9.6 0 4.8 1.6 7.2 1v3.5A21 21 0 0 1 4.4 34z" fill="#c05f2e"/>
+        <path d="M5.6 36.5c3.2-2.2 6.3-2.2 9.4 0s6.3 2.2 9.4 0 6.3-2.2 9.4 0 4.7 1.4 7 .9A21 21 0 0 1 7.6 40z" fill="#eaf2ef" opacity=".9"/>
+      </svg>
+      <span><strong>Bohemian Family Travelers</strong><span class="brand-sub">Family travel, planned personally</span></span>
+    </a>
+    <nav class="navlinks" aria-label="Main navigation">
+      <a href="#destinations">Trips</a>
+      <a href="#promotions">Promotions</a>
+      <a class="nav-extra" href="#excursions">Excursions &amp; Tours</a>
+      <a class="nav-extra" href="#flights">Flights</a>
+      <a href="#gallery">Past Trips</a>
+      <a class="nav-extra" href="#about">About</a>
+      <a class="nav-extra" href="#groups">Groups</a>
+      <a class="nav-phone" href="sms:+14046434749">Text (404) 643-4749</a>
+      <a class="btn btn-primary" href="#plan">Plan my trip</a>
+    </nav>
+  </div>
+</header>
+
+<main id="top">
+  <!-- HERO -->
+  <div class="hero">
+    <img class="hero-img" src="assets/hero-optimized.jpg" srcset="assets/hero-optimized-sm.jpg 800w, assets/hero-optimized.jpg 1440w" sizes="100vw" fetchpriority="high" decoding="async" alt="Two travelers on beach swings over turquoise water at Isla Mujeres, Mexico">
+    <div class="hero-shade"></div>
+    <span class="photo-tag hero-tag">Isla Mujeres · Riu Kukulkan trip, March 2026</span>
+    <div class="wrap hero-inner">
+      <p class="eyebrow" style="color:#f2c979">Where family fun begins</p>
+      <h1>Big trips feel easy when <em>someone who knows travel</em> plans them with you.</h1>
+      <p>Bohemian Family Travelers helps families and groups plan cruises, all-inclusive resorts, and trips close to home or around the world, built around your kids, your dates, and a budget you're comfortable with.</p>
+      <div class="hero-ctas">
+        <a class="btn btn-primary" href="#plan">Start a trip request →</a>
+        <a class="btn btn-light" href="#promotions">See current promotions</a>
+      </div>
+      <p class="hero-call">Prefer to reach out directly? Text <a href="sms:+14046434749">(404) 643-4749</a> or <a href="mailto:bohemianfamilytravelers@gmail.com">email us</a></p>
+      <div class="hero-facts">
+        <span class="fact">Budget-friendly trips</span><span class="fact">Family travel</span><span class="fact">Group trips</span><span class="fact">Cruises</span><span class="fact">All-inclusive resorts</span><span class="fact">International</span><span class="fact">Domestic</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- DESTINATIONS -->
+  <section id="destinations">
+    <div class="wrap">
+      <div class="sec-head">
+        <div><p class="eyebrow">Where we send families</p><h2>Start with the kind of trip you want</h2><p class="lede">Filter by travel style, then tap <strong>See deals</strong> on any destination to jump to the current deals that can fit it. Deal buttons bring you to the trip form — not to a supplier checkout — so we can compare more than one place we book through for your dates.</p></div>
+      </div>
+      <div class="filters" role="group" aria-label="Filter trips by style">
+        <button class="chipbtn" data-filter="all" aria-pressed="true">All trips</button>
+        <button class="chipbtn" data-filter="cruise" aria-pressed="false">Cruise</button>
+        <button class="chipbtn" data-filter="allinclusive" aria-pressed="false">All-inclusive</button>
+        <button class="chipbtn" data-filter="international" aria-pressed="false">International</button>
+        <button class="chipbtn" data-filter="domestic" aria-pressed="false">Domestic</button>
+      </div>
+      <div class="grid" id="destGrid">
+        <article class="card" data-kind="allinclusive international">
+          <img src="assets/palm-trees-framing-a-quiet-beach-and-turquoise-water.jpg" alt="Palm trees framing a quiet beach and turquoise water in the Caribbean">
+          <div class="card-body"><span class="tag">Caribbean</span><h3>Caribbean beach resorts</h3><p>All-inclusive stays where meals, drinks, and activities are bundled. A favorite for families who want to arrive and relax.</p><a class="card-link" href="#promotions" data-dest-deals="Caribbean" data-dest-label="Caribbean beach resorts">See deals for the Caribbean →</a></div>
+        </article>
+        <article class="card" data-kind="allinclusive international">
+          <img src="assets/travelers-at-the-colorful-cancun-letters-by-the-wate.jpg" alt="Travelers at the colorful CANCÚN letters by the water">
+          <span class="photo-tag card-tag">Riu Kukulkan · March 2026</span>
+          <div class="card-body"><span class="tag">Mexico</span><h3>Cancún &amp; Isla Mujeres</h3><p>We've stayed at Dreams, Riu Kukulkan, and The Pyramid. Easy flights from Atlanta, family resorts, and day trips to Isla Mujeres, cenotes, and jungle ATV tours.</p><a class="card-link" href="#promotions" data-dest-deals="Mexico" data-dest-label="Cancún &amp; Isla Mujeres">See deals for Cancún →</a></div>
+        </article>
+        <article class="card" data-kind="allinclusive international">
+          <img src="assets/a-tiered-waterfall-in-the-jamaican-rainforest-with-p.jpg" alt="A tiered waterfall in the Jamaican rainforest with people climbing it">
+          <div class="card-body"><span class="tag">Jamaica</span><h3>Jamaica resorts &amp; adventures</h3><p>Ocho Rios resorts, waterfall climbs, and swims at the Blue Hole. A great pick for big family groups.</p><a class="card-link" href="#promotions" data-dest-deals="Caribbean" data-dest-label="Jamaica resorts &amp; adventures">See deals for Jamaica →</a></div>
+        </article>
+        <article class="card" data-kind="cruise domestic">
+          <img src="assets/the-carnival-victory-docked-at-the-colorful-cruise-p.jpg" alt="The Carnival Victory docked at the colorful cruise port in Freeport, Bahamas">
+          <div class="card-body"><span class="tag">Cruises</span><h3>Family cruises</h3><p>Caribbean and Bahamas sailings matched to your family's ages, pace, and budget. Our families have sailed Carnival to Freeport and Grand Turk.</p><a class="card-link" href="#promotions" data-dest-deals="Caribbean" data-dest-label="Family cruises">See cruise deals →</a></div>
+        </article>
+        <article class="card" data-kind="cruise domestic">
+          <img src="assets/a-palm-tree-shading-white-sand-and-calm-turquoise-wa.jpg" alt="A palm tree shading white sand and calm turquoise water in the Bahamas">
+          <div class="card-body"><span class="tag">Bahamas</span><h3>Short Bahamas cruises</h3><p>Quick sailings from Florida, including Margaritaville at Sea to Grand Bahama. A low-cost way to try cruising with kids.</p><a class="card-link" href="#promotions" data-dest-deals="Bahamas" data-dest-label="Short Bahamas cruises">See deals for Bahamas cruises →</a></div>
+        </article>
+        <article class="card" data-kind="domestic">
+          <img src="assets/a-traveler-sitting-by-a-fountain-in-old-san-juan-pue.jpg" alt="A traveler sitting by a fountain in Old San Juan, Puerto Rico">
+          <div class="card-body"><span class="tag">Puerto Rico</span><h3>Puerto Rico</h3><p>Old San Juan, rainforest ziplines, and night kayaking, with no passport needed for U.S. citizens.</p><a class="card-link" href="#promotions" data-dest-deals="USA" data-dest-label="Puerto Rico">See deals for Puerto Rico →</a></div>
+        </article>
+        <article class="card" data-kind="domestic">
+          <img src="assets/a-beachfront-hotel-at-sunset-on-daytona-beach-florid.jpg" alt="A beachfront hotel at sunset on Daytona Beach, Florida">
+          <div class="card-body"><span class="tag">USA</span><h3>Florida &amp; Gulf Coast getaways</h3><p>Daytona Beach, Biloxi, and other drive-to beach weekends. Birthday trips and budget getaways close to home.</p><a class="card-link" href="#promotions" data-dest-deals="USA" data-dest-label="Florida &amp; Gulf Coast getaways">See deals for Florida &amp; the Gulf Coast →</a></div>
+        </article>
+        <article class="card" data-kind="domestic">
+          <img src="assets/the-giant-christmas-tree-on-avenue-of-the-americas-i.jpg" alt="The giant Christmas tree on Avenue of the Americas in New York City at night">
+          <div class="card-body"><span class="tag">New York</span><h3>New York City &amp; the holidays</h3><p>Holiday lights, Chinatown, and a real New York slice. City trips planned around your group's pace and budget.</p><a class="card-link" href="#promotions" data-dest-deals="USA" data-dest-label="New York City &amp; the holidays">See deals for New York City →</a></div>
+        </article>
+        <article class="card" data-kind="cruise domestic">
+          <img src="assets/a-cruise-ship-sailing-past-glaciers-and-mountains-in.jpg" alt="A cruise ship sailing past glaciers and mountains in Alaska">
+          <div class="card-body"><span class="tag">Alaska</span><h3>Alaska &amp; glacier cruising</h3><p>Inside Passage sailings with whale watching, glacier views, and port days in Juneau, Ketchikan, and Skagway.</p><a class="card-link" href="#promotions" data-dest-deals="Alaska" data-dest-label="Alaska &amp; glacier cruising">See deals for Alaska →</a></div>
+        </article>
+        <article class="card" data-kind="cruise">
+          <img src="assets/europe.jpg" alt="A family on the deck of a river cruise ship overlooking a European city and river">
+          <div class="card-body"><span class="tag">Europe</span><h3>Europe &amp; river cruises</h3><p>River cruises and city stays across Europe — castles, old towns, and food your family will talk about for years, planned around your pace and budget.</p><a class="card-link" href="#promotions" data-dest-deals="Europe" data-dest-label="Europe &amp; river cruises">See deals for Europe →</a></div>
+        </article>
+        <article class="card" data-kind="allinclusive international">
+          <img src="assets/punta-cana.jpg" alt="Palm trees and white sand on a beach in Punta Cana, Dominican Republic">
+          <div class="card-body"><span class="tag">Dominican Republic</span><h3>Punta Cana all-inclusive resorts</h3><p>Long white-sand beaches on Bávaro Beach, big resort pools, and all-inclusive stays for every style of trip, from quiet adults-only escapes to resorts built for kids.</p><a class="card-link" href="#promotions" data-dest-deals="Caribbean" data-dest-label="Punta Cana all-inclusive resorts">See deals for Punta Cana →</a></div>
+        </article>
+        <article class="card" data-kind="allinclusive international">
+          <img src="assets/los-cabos.jpg" alt="A beach resort with the El Arco rock formation in Los Cabos, Mexico">
+          <div class="card-body"><span class="tag">Mexico</span><h3>Los Cabos all-inclusive resorts</h3><p>Baja sunshine, desert-meets-the-sea views, and El Arco boat days. All-inclusive resorts in Cabo San Lucas and San José del Cabo, plus whale watching in season.</p><a class="card-link" href="#promotions" data-dest-deals="Mexico" data-dest-label="Los Cabos all-inclusive resorts">See deals for Los Cabos →</a></div>
+        </article>
+        <article class="card" data-kind="allinclusive international">
+          <img src="assets/aruba.jpg" alt="A palm tree on the white sand of Eagle Beach in Aruba">
+          <div class="card-body"><span class="tag">Aruba</span><h3>Aruba beach resorts</h3><p>Eagle Beach and Palm Beach stays on one of the Caribbean&rsquo;s sunniest islands, outside the hurricane belt. All-inclusive resorts, snorkeling, and sunset sails.</p><a class="card-link" href="#promotions" data-dest-deals="Caribbean" data-dest-label="Aruba beach resorts">See deals for Aruba →</a></div>
+        </article>
+        <article class="card" data-kind="allinclusive international">
+          <img src="assets/st-lucia.jpg" alt="A beach with the Pitons rising behind it in St. Lucia">
+          <div class="card-body"><span class="tag">St. Lucia &amp; Barbados</span><h3>More Caribbean all-inclusive islands</h3><p>St. Lucia&rsquo;s Pitons, Barbados&rsquo; west-coast resorts, Curaçao, Antigua, and Grenada. Tell us the island vibe you want and we&rsquo;ll match the resort.</p><a class="card-link" href="#promotions" data-dest-deals="Caribbean" data-dest-label="St. Lucia, Barbados &amp; more Caribbean islands">See deals for more Caribbean islands →</a></div>
+        </article>
+        <article class="card" data-kind="international">
+          <img src="assets/paris.jpg" alt="The Eiffel Tower in Paris, France">
+          <div class="card-body"><span class="tag">France</span><h3>Paris &amp; France city stays</h3><p>Eiffel Tower days, museum passes, and day trips to Versailles or Normandy. Hotels picked for easy Metro access, with flights and trains arranged together.</p><a class="card-link" href="#promotions" data-dest-deals="Europe" data-dest-label="Paris &amp; France city stays">See deals for Paris →</a></div>
+        </article>
+        <article class="card" data-kind="international">
+          <img src="assets/rome.jpg" alt="The Colosseum in Rome, Italy at sunset">
+          <div class="card-body"><span class="tag">Italy</span><h3>Italy — Rome &amp; the Amalfi Coast</h3><p>The Colosseum and Vatican in Rome, then coast days in Sorrento and Positano. Escorted tours or independent trips with hotels, trains, and guides sorted.</p><a class="card-link" href="#promotions" data-dest-deals="Europe" data-dest-label="Italy — Rome &amp; the Amalfi Coast">See deals for Italy →</a></div>
+        </article>
+        <article class="card" data-kind="international">
+          <img src="assets/santorini.jpg" alt="White buildings with blue domes above the sea in Santorini, Greece">
+          <div class="card-body"><span class="tag">Greece</span><h3>Greece — Athens &amp; the islands</h3><p>Start with the Acropolis in Athens, then ferry to Santorini and Mykonos. Land stays planned island by island, so you see Greece without a cruise schedule.</p><a class="card-link" href="#promotions" data-dest-deals="Europe" data-dest-label="Greece — Athens &amp; the islands">See deals for Greece →</a></div>
+        </article>
+        <article class="card" data-kind="international">
+          <img src="assets/dubai.jpg" alt="The Dubai skyline with the Burj Khalifa in the United Arab Emirates">
+          <div class="card-body"><span class="tag">UAE</span><h3>Dubai &amp; Abu Dhabi</h3><p>Burj Khalifa views, desert safaris, and Abu Dhabi&rsquo;s Grand Mosque. City hotels, tours, and stopover stays on the way to Asia or Africa.</p><a class="card-link" href="#promotions" data-dest-deals="Middle East" data-dest-label="Dubai &amp; Abu Dhabi">See deals for Dubai →</a></div>
+        </article>
+        <article class="card" data-kind="cruise domestic">
+          <img src="assets/us-river-cruise.jpg" alt="A paddlewheel riverboat docked on the Mississippi River">
+          <div class="card-body"><span class="tag">USA Rivers</span><h3>U.S. river cruises</h3><p>Cruising without leaving the country: Mississippi River paddlewheelers and Columbia River sailings, with small ships, river towns, and no passport needed.</p><a class="card-link" href="#promotions" data-dest-deals="USA" data-dest-label="U.S. river cruises">See deals for U.S. river cruises →</a></div>
+        </article>
+        <article class="card" data-kind="domestic">
+          <img src="assets/caesars-palace-in-las-vegas-under-a-cloudy-sky.jpg" alt="Caesars Palace in Las Vegas under a cloudy sky">
+          <div class="card-body"><span class="tag">Casino Trips</span><h3>Las Vegas &amp; casino getaways</h3><p>Strip hotels in Las Vegas, casino resorts, shows, and fight-night weekends. We bundle flights and hotel, and can add Grand Canyon or Hoover Dam days.</p><a class="card-link" href="#promotions" data-dest-deals="USA" data-dest-label="Las Vegas &amp; casino getaways">See deals for Las Vegas →</a></div>
+        </article>
+        <article class="card" data-kind="domestic">
+          <img src="assets/two-women-under-the-lit-biloxi-sign-at-night.jpg" alt="Two women under the lit BILOXI sign at night">
+          <div class="card-body"><span class="tag">Casino Coast</span><h3>Biloxi &amp; Gulf Coast casinos</h3><p>Drive-to casino resorts in Biloxi and along the Mississippi Gulf Coast, with beach time, seafood, and swamp tours in the same weekend.</p><a class="card-link" href="#promotions" data-dest-deals="USA" data-dest-label="Biloxi &amp; Gulf Coast casinos">See deals for Biloxi →</a></div>
+        </article>
+        <article class="card" data-kind="domestic">
+          <img src="assets/smoky-cabin.jpg" alt="A log cabin in the green forest of the Great Smoky Mountains">
+          <div class="card-body"><span class="tag">Cabin Trips</span><h3>Smoky Mountain cabin trips</h3><p>Cabins in Gatlinburg and Pigeon Forge, plus Blue Ridge and Asheville stays. Hot tubs, mountain views, and room for the whole crew, a short drive from Atlanta.</p><a class="card-link" href="#promotions" data-dest-deals="USA" data-dest-label="Smoky Mountain cabin trips">See deals for cabin trips →</a></div>
+        </article>
+        <article class="card" data-kind="domestic">
+          <img src="assets/orlando.jpg" alt="Roller coasters reflected in the water at an Orlando theme park at dusk">
+          <div class="card-body"><span class="tag">Theme Parks</span><h3>Orlando &amp; theme park trips</h3><p>Orlando park tickets, on-site and nearby hotels, and park-day plans that pace the kids. We can pair park days with a beach or cruise add-on.</p><a class="card-link" href="#promotions" data-dest-deals="USA" data-dest-label="Orlando &amp; theme park trips">See deals for Orlando →</a></div>
+        </article>
+        <article class="card" data-kind="domestic">
+          <img src="assets/grand-canyon.jpg" alt="Sunrise over the Grand Canyon in Arizona">
+          <div class="card-body"><span class="tag">Road Trips</span><h3>National parks &amp; road trips</h3><p>Grand Canyon, Yellowstone, Zion, and the Smokies, plus scenic rail and fly-and-drive routes. Lodges, park passes, and driving days planned at a sane pace.</p><a class="card-link" href="#promotions" data-dest-deals="USA" data-dest-label="National parks &amp; road trips">See deals for road trips →</a></div>
+        </article>
+      </div>
+      <p class="small" style="margin-top:1rem">Dreaming of somewhere beyond these cards — South America, Asia, Africa, Canada, the Middle East, or the South Pacific? We plan those too. Choose it as your destination in the trip request below and we&rsquo;ll build options for you.</p>
+      <p class="small" id="destEmpty" hidden>Nothing in this category yet. Send a trip request and we'll find options for you.</p>
+    </div>
+  </section>
+
+  <!-- GROUPS -->
+  <section id="groups" class="groups-band">
+    <div class="wrap groups">
+      <div class="groups-photo"><img src="assets/a-group-of-travelers-swimming-together-in-a-cave-cen.jpg" alt="A group of travelers swimming together in a cave cenote in Cancún"></div>
+      <div class="groups-copy">
+        <p class="eyebrow" style="color:#f2c979">Group travel</p>
+        <h2>Bring everybody. We'll handle the details.</h2>
+        <p>Group trips are what we do most. From a mother–daughter getaway to a family reunion of twenty, we plan trips where everyone has a great time and the organizer isn't stuck chasing payments.</p>
+        <ul class="group-types">
+          <li>Family reunions</li><li>Girls' trips</li><li>Milestone birthdays</li><li>Mother–daughter trips</li><li>Teen &amp; youth trips</li><li>Church, school &amp; club groups</li><li>Group cruises</li><li>Destination weddings</li>
+        </ul>
+        <div class="group-how">
+          <div><strong>Everyone books their own spot</strong><span>Each traveler or family pays their own deposit and payment plan.</span></div>
+          <div><strong>Group rates and perks</strong><span>Larger groups can qualify for special pricing and extras.</span></div>
+          <div><strong>Deadlines tracked for you</strong><span>We send reminders before deposits and final payments are due.</span></div>
+        </div>
+        <div class="hero-ctas"><a class="btn btn-primary" href="#plan">Start a group inquiry →</a><a class="btn btn-light" href="#gallery">See our group trips</a></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROMOTIONS -->
+  <section id="promotions" class="alt">
+    <div class="wrap">
+      <p class="eyebrow">Promotions</p>
+      <h2>Current offers, gathered in one place</h2>
+      <p class="lede">Vacation Express is only one of the places we look for trips — we compare deals across several suppliers for the same destination before we quote you. So no deal button below sends you to a supplier's checkout: every one takes you to the <a href="#plan">trip request form</a> with that deal already noted, and we check it against your dates and the other suppliers we book through.</p>
+      <p style="margin:1rem 0 0;color:var(--muted)"><strong style="color:var(--ink)">Suppliers we compare for you:</strong></p>
+      <div class="filters" aria-label="Suppliers we compare">
+        <span class="tag">Vacation Express</span>
+        <span class="tag">ALG Vacations</span>
+        <span class="tag">Hyatt Inclusive Collection</span>
+        <span class="tag">Carnival Cruise Line</span>
+        <span class="tag">Princess Cruises</span>
+        <span class="tag">Holland America Line</span>
+        <span class="tag">Sandals &amp; Beaches</span>
+        <span class="tag">Oceania Cruises</span>
+        <span class="tag">Major Travel tours</span>
+      </div>
+      <div class="notice" id="dealForBanner" hidden style="margin-top:1rem">
+        <strong>Deals for your destination.</strong> <span id="dealForText">Pick a deal below and its button takes you to the trip form — we&rsquo;ll compare suppliers for your dates, not just one booking site.</span> <a href="#plan">Or skip straight to the trip form →</a>
+      </div>
+
+      <!-- Hot deals render here from HOT_DEALS in the script. -->
+      <div class="featured-promos" id="featuredWrap" hidden>
+        <h3 style="font-size:1.5rem;margin:1.4rem 0 1rem">Hot deals right now</h3>
+        <div class="grid" id="featuredGrid"></div>
+      </div>
+
+      <div class="filters" role="group" aria-label="Filter promotions">
+        <button class="chipbtn promo-filter" data-pfilter="all" aria-pressed="true">All offers</button>
+        <button class="chipbtn promo-filter" data-pfilter="resort" aria-pressed="false">Resorts &amp; packages</button>
+        <button class="chipbtn promo-filter" data-pfilter="cruise" aria-pressed="false">Cruises</button>
+      </div>
+
+      <div class="grid grid-2" id="promoGrid">
+        <article class="card promo-wide" data-pkind="resort cruise">
+          <div class="card-body">
+            <span class="tag">Updated weekly · Multiple suppliers</span>
+            <h3>This week's hot deals</h3>
+            <p>Fresh resort and cruise offers every week from brands like Sandals, Beaches, Princess, Holland America, and Oceania, plus escorted tours in Europe — gathered from the suppliers we book through, not just one site. See the Hot Deals above, pick the one you like, and its button takes you to the trip form so we can price it for your dates.</p>
+            <a class="btn btn-primary" href="#plan" data-ask-deal="This week's hot deals">Ask about this week's deals →</a>
+          </div>
+        </article>
+        <article class="card" data-pkind="resort">
+          <div class="card-body">
+            <span class="tag">Packages · Multiple suppliers</span>
+            <h3>Last-minute all-inclusive deals</h3>
+            <p>Air-inclusive packages to the Caribbean, Mexico, and Central America, with meals, drinks, and activities included at all-inclusive resorts. Vacation Express posts some of these — ALG Vacations and the resort brands post others — so send the trip form and we'll compare them for your departure city and dates instead of sending you to one site.</p>
+            <a class="btn btn-teal" href="#plan" data-ask-deal="Last-minute all-inclusive deals">Ask about last-minute deals →</a>
+            <p class="promo-meta">Send us your dates and we'll confirm the current price across suppliers before you book.</p>
+          </div>
+        </article>
+
+
+
+        <article class="card" data-pkind="resort">
+          <div class="card-body">
+            <span class="tag">Hyatt Inclusive Collection · Resorts</span>
+            <h3>Hyatt all-inclusive resorts</h3>
+            <p>Family-friendly Hyatt Ziva, Dreams, and Sunscape, plus adults-only Secrets and Hyatt Zilara, across Mexico, the Caribbean, and Central America. We book these through ALG Vacations with flights, resort, and transfers in one package.</p>
+            <a class="btn btn-teal" href="#plan" data-ask-deal="Hyatt all-inclusive resorts (Hyatt Ziva, Dreams, Sunscape, Secrets, Hyatt Zilara)">Ask about Hyatt resorts →</a>
+            <p class="promo-meta">Tell us the resort style you like and your dates in the form, and we'll quote the full package.</p>
+          </div>
+        </article>
+        <article class="card" data-pkind="cruise">
+          <div class="card-body">
+            <span class="tag">Carnival · Cruises</span>
+            <h3>Carnival cruise deals</h3>
+            <p>Carnival sailings to the Caribbean, Bahamas, Mexico, and Alaska — and we compare them with Princess, Holland America, and other lines on the same routes. Send the form and we'll match cabins, group rates, and excursion add-ons to your dates.</p>
+            <a class="btn btn-teal" href="#plan" data-ask-deal="Carnival cruise deals">Ask about cruise deals →</a>
+            <p class="promo-meta">We confirm the live fare, taxes, and fees with you before anything is booked.</p>
+          </div>
+        </article>
+
+
+        <article class="card" data-pkind="cruise">
+          <div class="card-body">
+            <span class="tag">Viator · Ports &amp; destinations</span>
+            <h3>Tours that make every stop count</h3>
+            <p>Excursions for cruise port days and for land trips too — snorkeling, ruins, food tours, and city days in the places our families actually visit, booked through Viator.</p>
+            <a class="btn btn-teal" href="#excursions">Browse tours by port &amp; destination ↓</a>
+            <p class="promo-meta">Book early. Popular tours sell out before sailing.</p>
+          </div>
+        </article>
+      </div>
+
+      <div class="steps" style="margin-top:1.6rem">
+        <div class="step"><div class="num">01</div><h3>Pick a destination or a deal</h3><p>Start from <a href="#destinations">Where we send families</a> or from any deal on this page — either way you land here, with the deals that can fit that trip.</p></div>
+        <div class="step"><div class="num">02</div><h3>Send it through the trip form</h3><p>Deal buttons open the <a href="#plan">trip request form</a> with the deal already noted for you at the top of the form. No supplier checkout, no booking anything by accident.</p></div>
+        <div class="step"><div class="num">03</div><h3>We compare, then quote</h3><p>We check that deal across Vacation Express, ALG Vacations, the cruise lines, and our other suppliers for your exact dates, then reply with the confirmed price before you pay anything.</p></div>
+      </div>
+
+      <div class="booknote">
+        <div>
+          <strong>Found a deal somewhere else? Book it with us.</strong>
+          <p>Send us any offer you find and we'll book it for you, usually at the same price you'd pay on your own, with a real person handling changes, payments, and documents. Text <a href="sms:+14046434749">(404) 643-4749</a> or email <a href="mailto:bohemianfamilytravelers@gmail.com">bohemianfamilytravelers@gmail.com</a>.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- BRANCHUP UPDATES: This is the section Muse updates from BranchUp.
+       Refresh the note/date and any featured post below whenever BranchUp
+       publishes new Bohemian Family Travelers offers. The Hot Deals grid in
+       Promotions above is fed from the same BranchUp / supplier posts. -->
+  <section id="branchup">
+    <div class="wrap">
+      <p class="eyebrow">BranchUp updates</p>
+      <h2>Fresh from BranchUp</h2>
+      <p class="lede" style="margin-bottom:1.4rem">Yes — this is the section we update with BranchUp. BranchUp creates the travel posts and offers for Bohemian Family Travelers on social media. We pull the newest offers from those posts (and from supplier emails) into the Hot Deals in Promotions above, and feature the latest updates here.</p>
+      <div class="steps">
+        <div class="step"><h3>Hot deals, refreshed</h3><p>The Hot Deals grid in <a href="#promotions">Promotions</a> is where BranchUp offers land on this page. It was last refreshed on November 5, 2026, the day BranchUp was reactivated, so posts are flowing again.</p></div>
+        <div class="step"><h3>Daily posts on Facebook</h3><p>BranchUp posts travel ideas and offers to our Facebook page between site updates. Follow there for the newest post the day it goes out.</p><p style="margin-top:.6rem"><a class="btn btn-teal" href="https://www.facebook.com/share/1CkqLxqvtT/" target="_blank" rel="noopener">Follow on Facebook ↗</a></p></div>
+        <div class="step"><h3>Trips &amp; tips on Instagram</h3><p>Real trip photos, reels, and travel tips from Bohemian Family Travelers trips, alongside the BranchUp offers.</p><p style="margin-top:.6rem"><a class="btn btn-teal" href="https://www.instagram.com/bohemianfamilytravelers/" target="_blank" rel="noopener">Follow on Instagram ↗</a></p></div>
+      </div>
+      <p class="small" style="margin-top:1.2rem">This page is a snapshot, not a live BranchUp feed — offers here are checked when the page is updated. Deal cards send you to the trip form, where we confirm the current price across suppliers before you book.</p>
+    </div>
+  </section>
+
+  <!-- EXCURSIONS -->
+  <section id="excursions">
+    <div class="wrap">
+      <p class="eyebrow">Excursions &amp; tours</p>
+      <h2>Make every port — and every destination — count</h2>
+      <p class="lede" style="margin-bottom:1.4rem">Cruising or staying on land, the day off the ship or away from the resort is often the part families remember most. We book tours through Viator for cruise ports and for destinations, so every stop gets a plan: snorkeling, beach breaks, ruins, glaciers, food, and city days.</p>
+      <div class="shore">
+        <div class="shore-photo"><img src="assets/a-traveler-at-the-colorful-grand-turk-letters-on-a-c.jpg" alt="A traveler at the colorful GRAND TURK letters on a cruise port day"></div>
+        <div class="shore-box">
+          <h3>Browse tours on Viator</h3>
+          <p>Every link below opens Viator, where you put in your own destination and dates, compare tours and prices, and book for your trip. Not sure what fits your time in port? Send a trip request and we&rsquo;ll match tours to your itinerary.</p>
+          <p style="font-weight:800;color:#fff;margin:1.1rem 0 .2rem">Cruise ports</p>
+          <div class="port-links">
+            <a href="https://www.viator.com/?pid=P00011640&uid=U00164664&mcid=58086&currency=USD" target="_blank" rel="noopener">Cozumel, Mexico ↗</a>
+            <a href="https://www.viator.com/?pid=P00011640&uid=U00164664&mcid=58086&currency=USD" target="_blank" rel="noopener">Nassau, Bahamas ↗</a>
+            <a href="https://www.viator.com/?pid=P00011640&uid=U00164664&mcid=58086&currency=USD" target="_blank" rel="noopener">Costa Maya, Mexico ↗</a>
+            <a href="https://www.viator.com/?pid=P00011640&uid=U00164664&mcid=58086&currency=USD" target="_blank" rel="noopener">Roatán, Honduras ↗</a>
+            <a href="https://www.viator.com/?pid=P00011640&uid=U00164664&mcid=58086&currency=USD" target="_blank" rel="noopener">Grand Cayman ↗</a>
+            <a href="https://www.viator.com/?pid=P00011640&uid=U00164664&mcid=58086&currency=USD" target="_blank" rel="noopener">Grand Turk ↗</a>
+            <a href="https://www.viator.com/?pid=P00011640&uid=U00164664&mcid=58086&currency=USD" target="_blank" rel="noopener">Freeport, Grand Bahama ↗</a>
+            <a href="https://www.viator.com/?pid=P00011640&uid=U00164664&mcid=58086&currency=USD" target="_blank" rel="noopener">Juneau, Alaska ↗</a>
+          </div>
+          <p style="font-weight:800;color:#fff;margin:1.1rem 0 .2rem">Destinations — not just cruises</p>
+          <div class="port-links">
+            <a href="https://www.viator.com/?pid=P00011640&uid=U00164664&mcid=58086&currency=USD" target="_blank" rel="noopener">Cancún &amp; Isla Mujeres ↗</a>
+            <a href="https://www.viator.com/?pid=P00011640&uid=U00164664&mcid=58086&currency=USD" target="_blank" rel="noopener">Jamaica ↗</a>
+            <a href="https://www.viator.com/?pid=P00011640&uid=U00164664&mcid=58086&currency=USD" target="_blank" rel="noopener">San Juan, Puerto Rico ↗</a>
+            <a href="https://www.viator.com/?pid=P00011640&uid=U00164664&mcid=58086&currency=USD" target="_blank" rel="noopener">New York City ↗</a>
+            <a href="https://www.viator.com/?pid=P00011640&uid=U00164664&mcid=58086&currency=USD" target="_blank" rel="noopener">Florida &amp; Gulf Coast ↗</a>
+            <a href="https://www.viator.com/?pid=P00011640&uid=U00164664&mcid=58086&currency=USD" target="_blank" rel="noopener">Las Vegas ↗</a>
+            <a href="https://www.viator.com/?pid=P00011640&uid=U00164664&mcid=58086&currency=USD" target="_blank" rel="noopener">Europe ↗</a>
+            <a href="https://www.viator.com/?pid=P00011640&uid=U00164664&mcid=58086&currency=USD" target="_blank" rel="noopener">Alaska ↗</a>
+          </div>
+          <div class="hero-ctas" style="margin-top:1.2rem">
+            <a class="btn btn-primary" href="https://www.viator.com/?pid=P00011640&uid=U00164664&mcid=58086&currency=USD" target="_blank" rel="noopener">Search all tours on Viator ↗</a>
+            <a class="btn btn-light" href="#plan">Ask us to match tours →</a>
+          </div>
+          <p class="small" style="color:#bcd3cd;margin-top:1rem">On a cruise, pick tours that end well before your ship&rsquo;s all-aboard time, and check the cancellation terms on Viator before you book. Unsure about a tour? Ask us — we&rsquo;ll help you choose.</p>
+        </div>
+      </div>
+      <h3 style="font-size:1.4rem;margin:2rem 0 1rem">Excursions our travelers loved</h3>
+      <div class="xgrid">
+        <figure class="polaroid"><img src="assets/a-group-of-travelers-swimming-together-in-a-cave-cen.jpg" alt="A group swimming in life jackets in a cave cenote"><figcaption><span class="pl-place">Cenote swim, Cancún</span><span class="pl-date">2026</span></figcaption></figure>
+        <figure class="polaroid"><img src="assets/a-traveler-waving-from-an-atv-on-a-jungle-trail.jpg" alt="A traveler waving from an ATV on a jungle trail"><figcaption><span class="pl-place">Jungle ATV, Cancún</span><span class="pl-date">2025</span></figcaption></figure>
+        <figure class="polaroid"><img src="assets/a-traveler-on-a-zipline-platform-with-a-guide.jpg" alt="A traveler on a zipline platform with a guide"><figcaption><span class="pl-place">Zipline, Puerto Rico</span><span class="pl-date">July 2024</span></figcaption></figure>
+        <figure class="polaroid"><img src="assets/travelers-in-a-kayak-at-night-with-city-lights-behin.jpg" alt="Travelers in a kayak at night with city lights behind them"><figcaption><span class="pl-place">Night kayak, San Juan</span><span class="pl-date">July 2024</span></figcaption></figure>
+        <figure class="polaroid"><img src="assets/a-natural-blue-hole-surrounded-by-tropical-plants.jpg" alt="A natural blue hole surrounded by tropical plants"><figcaption><span class="pl-place">Blue hole, Grand Bahama</span><span class="pl-date">July 2023</span></figcaption></figure>
+        <figure class="polaroid"><img src="assets/a-smiling-traveler-holding-a-baby-alligator-on-a-swa.jpg" alt="A smiling traveler holding a baby alligator on a swamp tour boat"><figcaption><span class="pl-place">Swamp tour, Mississippi</span><span class="pl-date">June 2024</span></figcaption></figure>
+      </div>
+    </div>
+  </section>
+
+  <!-- TRAVEL PROTECTION -->
+  <section id="protection" class="alt">
+    <div class="wrap">
+      <p class="eyebrow">Travel protection</p>
+      <h2>Protect the trip you've been saving for</h2>
+      <p class="lede" style="margin-bottom:1.4rem">Travel protection covers the things nobody plans for. For families and groups paying deposits months ahead, it can be the difference between losing your money and rebooking.</p>
+      <div class="protect">
+        <div class="protect-reasons">
+          <div><h3>Cancellations</h3><p>A sick child, a family emergency, or a job change can cancel a trip. Many plans refund prepaid, nonrefundable costs for covered reasons.</p></div>
+          <div><h3>Medical care away from home</h3><p>Your health insurance may not cover you in another country, and emergency care or evacuation can cost thousands.</p></div>
+          <div><h3>Delays and missed departures</h3><p>A late flight can mean missing your cruise. Coverage can help with hotels, meals, and catching up to the ship.</p></div>
+          <div><h3>Lost or delayed bags</h3><p>Help replacing essentials so the trip doesn't stop while the airline finds your luggage.</p></div>
+        </div>
+        <div class="shore-box protect-box">
+          <h3>How we choose your plan</h3>
+          <p>The right protection depends on how you book. For some cruises and resort packages, the supplier's own plan works best. For others, a separate plan gives more coverage. We'll recommend the best fit for your trip.</p>
+          <p>Some benefits are only available if you buy soon after your first deposit, so ask us early.</p>
+          <div class="hero-ctas">
+            <a class="btn btn-primary" data-link="insurance" href="https://www.etravelprotection.com/allianz/home" target="_blank" rel="noopener">Get an Allianz quote ↗</a>
+            <a class="btn btn-light" href="https://d3nyn9h0k44yua.cloudfront.net/media/backoffice/us/pdf/WhyPurchaseInsurance.pdf" target="_blank" rel="noopener">Why buy travel protection ↗</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FLIGHTS -->
+  <section id="flights">
+    <div class="wrap">
+      <div class="flights">
+        <div class="flights-copy">
+          <img class="flights-photo" src="assets/a-view-of-clouds-and-a-yellow-airplane-wing-through.jpg" alt="A view of clouds and a yellow airplane wing through a plane window">
+          <p class="eyebrow">Flights</p>
+          <h2>Just need flights?</h2>
+          <p class="lede">We book flights on their own too, for family visits, weekend trips, or getting to your cruise port. Search and book on my booking site, or tell us where and when and we'll find options that fit your schedule and budget.</p>
+          <div class="hero-ctas">
+            <a class="btn btn-primary" data-link="flights" href="https://jondreawilliams.inteletravel.com/" target="_blank" rel="noopener">Search flights ↗</a>
+            <a class="btn btn-ghost" href="#plan">Request a flight quote</a>
+          </div>
+        </div>
+        <ul class="flights-list">
+          <li><strong>Seats together</strong><span>We check seating so kids aren't split from parents.</span></li>
+          <li><strong>Smart timing</strong><span>Flights that get you to the port the day before your cruise.</span></li>
+          <li><strong>Bags and fees</strong><span>Baggage costs compared up front, so there are no surprises.</span></li>
+          <li><strong>Domestic and international</strong><span>Help with passports and entry rules for trips abroad.</span></li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- GALLERY -->
+  <section id="gallery">
+    <div class="wrap">
+      <p class="eyebrow">Real trips</p>
+      <h2>Our travelers on the road</h2>
+      <p class="lede">Snapshots from trips planned by Bohemian Family Travelers.</p>
+      <div class="gallery">
+        <figure class="polaroid"><img src="assets/room-service-breakfast-with-a-view-of-the-beach-and.jpg" alt="Room service breakfast with a view of the beach and pools"><figcaption><span class="pl-place">Dreams Resort, Cancún</span><span class="pl-date">July 2026</span></figcaption></figure>
+        <figure class="polaroid"><img src="assets/sunrise-over-palm-trees-and-pools-at-a-cancun-resort.jpg" alt="Sunrise over palm trees and pools at a Cancún resort"><figcaption><span class="pl-place">Mother–daughter trip, Cancún</span><span class="pl-date">September 2025</span></figcaption></figure>
+        <figure class="polaroid g-wide"><img src="assets/a-big-family-group-waving-at-the-original-blue-hole.jpg" alt="A big family group waving at The Original Blue Hole in Jamaica"><figcaption><span class="pl-place">Blue Hole, Jamaica</span><span class="pl-date">July 2025</span></figcaption></figure>
+        <figure class="polaroid"><img src="assets/a-traveler-next-to-a-santa-statue-outside-an-italian.jpg" alt="A traveler next to a Santa statue outside an Italian restaurant in New York"><figcaption><span class="pl-place">New York City</span><span class="pl-date">December 2024</span></figcaption></figure>
+        <figure class="polaroid"><img src="assets/lanterns-strung-over-a-busy-street-in-chinatown-new.jpg" alt="Lanterns strung over a busy street in Chinatown, New York"><figcaption><span class="pl-place">Chinatown, NYC</span><span class="pl-date">December 2024</span></figcaption></figure>
+        <figure class="polaroid"><img src="assets/a-mom-and-teen-taking-a-selfie-at-their-riu-resort.jpg" alt="A mom and teen taking a selfie at their Riu resort"><figcaption><span class="pl-place">Riu Ocho Rios, Jamaica</span><span class="pl-date">July 2024</span></figcaption></figure>
+        <figure class="polaroid"><img src="assets/four-friends-smiling-on-a-bench-in-old-san-juan.jpg" alt="Four friends smiling on a bench in Old San Juan"><figcaption><span class="pl-place">Old San Juan, Puerto Rico</span><span class="pl-date">July 2024</span></figcaption></figure>
+        <figure class="polaroid"><img src="assets/three-women-under-the-west-beach-boardwalk-sign-in-b.jpg" alt="Three women under the West Beach Boardwalk sign in Biloxi"><figcaption><span class="pl-place">Birthday trip, Biloxi</span><span class="pl-date">June 2024</span></figcaption></figure>
+        <figure class="polaroid"><img src="assets/two-women-under-the-lit-biloxi-sign-at-night.jpg" alt="Two women under the lit BILOXI sign at night"><figcaption><span class="pl-place">Biloxi, Mississippi</span><span class="pl-date">June 2024</span></figcaption></figure>
+        <figure class="polaroid"><img src="assets/three-travelers-in-front-of-a-lighthouse-mural-in-gr.jpg" alt="Three travelers in front of a lighthouse mural in Grand Bahama"><figcaption><span class="pl-place">Margaritaville cruise, Freeport</span><span class="pl-date">July 2023</span></figcaption></figure>
+        <figure class="polaroid"><img src="assets/a-family-at-dinner-in-a-cruise-ship-dining-room.jpg" alt="A family at dinner in a cruise ship dining room"><figcaption><span class="pl-place">Carnival Sunrise</span><span class="pl-date">2022</span></figcaption></figure>
+        <figure class="polaroid"><img src="assets/a-towel-monkey-hanging-in-a-cruise-cabin.jpg" alt="A towel monkey hanging in a cruise cabin"><figcaption><span class="pl-place">Carnival Sunrise</span><span class="pl-date">2022</span></figcaption></figure>
+        <figure class="polaroid"><img src="assets/a-row-of-motorcycles-parked-at-a-hotel-during-dayton.jpg" alt="A row of motorcycles parked at a hotel during Daytona Bike Week"><figcaption><span class="pl-place">Bike Week, Daytona</span><span class="pl-date">October 2021</span></figcaption></figure>
+        <figure class="polaroid g-wide g-wide-r"><img src="assets/a-group-whitewater-rafting-in-helmets-and-life-jacke.jpg" alt="A group whitewater rafting in helmets and life jackets on a Tennessee river"><figcaption><span class="pl-place">Whitewater rafting, Tennessee</span><span class="pl-date">2015</span></figcaption></figure>
+        <figure class="polaroid"><img src="assets/a-dog-looking-out-a-hotel-balcony-door-at-the-ocean.jpg" alt="A dog looking out a hotel balcony door at the ocean in Daytona Beach"><figcaption><span class="pl-place">Daytona Beach, Florida</span><span class="pl-date">July 2021</span></figcaption></figure>
+        <figure class="polaroid"><img src="assets/a-traveler-at-the-welcome-to-fabulous-las-vegas-sign.jpg" alt="A traveler at the Welcome to Fabulous Las Vegas sign"><figcaption><span class="pl-place">Las Vegas, Nevada</span><span class="pl-date">April 2021</span></figcaption></figure>
+        <figure class="polaroid"><img src="assets/caesars-palace-in-las-vegas-under-a-cloudy-sky.jpg" alt="Caesars Palace in Las Vegas under a cloudy sky"><figcaption><span class="pl-place">Caesars Palace, Las Vegas</span><span class="pl-date">April 2021</span></figcaption></figure>
+        <figure class="polaroid"><img src="assets/three-teens-on-a-boogie-board-in-the-ocean.jpg" alt="Three teens on a boogie board in the ocean"><figcaption><span class="pl-place">Teen trip, Florida</span><span class="pl-date">July 2018</span></figcaption></figure>
+      </div>
+      <div class="follow"><p><strong>See our latest trips</strong> Follow along for new photos, deals, and travel tips.</p><div class="follow-links"><a class="btn btn-teal soc-btn" data-social="instagram" href="#" target="_blank" rel="noopener"><svg class="soc-ic" viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5" fill="none" stroke="currentColor" stroke-width="2"/><circle cx="12" cy="12" r="4" fill="none" stroke="currentColor" stroke-width="2"/><circle cx="17.3" cy="6.7" r="1.2" fill="currentColor"/></svg><span>Instagram</span></a><a class="btn btn-teal soc-btn" data-social="facebook" href="#" target="_blank" rel="noopener" hidden><svg class="soc-ic" viewBox="0 0 24 24" aria-hidden="true"><path d="M14 8h3V4h-3c-2.8 0-4.5 1.8-4.5 4.6V11H7v4h2.5v6h4v-6h3l.5-4h-3.5V9c0-.6.4-1 1-1z" fill="currentColor"/></svg><span>Facebook</span></a></div></div>
+    </div>
+  </section>
+
+  <!-- ADVISOR -->
+  <section id="about" class="alt">
+    <div class="wrap advisor">
+      <img class="advisor-photo" src="assets/jondrea-williams-on-a-hotel-balcony-at-sunset-in-can.jpg" alt="Jondrea Williams on a hotel balcony at sunset in Cancún">
+      <div class="advisor-copy">
+        <p class="eyebrow">Meet your advisor</p>
+        <h2>Jondrea Williams</h2>
+        <p class="advisor-role">CLIA-Certified Independent Travel Advisor · Atlanta, Georgia</p>
+        <p class="lede">I was planning trips long before anyone paid me to. I'm the mom with twenty tabs open, comparing resorts, hunting down deals, and mapping out every day so my kids could see the world beyond home. I love new cultures, new foods, and the moments you can't schedule, like a street festival you stumble into or a dish you can't pronounce yet.</p>
+        <p class="lede">Then someone scrolling through my travel photos asked me a simple question: "Have you ever thought about doing this for other people?" I realized I already was. Now I bring that same research and care to every family and group I work with. You get the trip, and I keep the twenty tabs.</p>
+        <div class="badges">
+          <img src="assets/badge-dream-maker.png" alt="Dream Maker certification">
+          <img src="assets/badge-vacation-builder.png" alt="Vacation Builder certification">
+          <span class="clia">CLIA Certified</span>
+          <span>CLIA-certified, plus Dream Maker and Vacation Builder certifications through InteleTravel.</span>
+        </div>
+        <div class="hero-ctas">
+          <a class="btn btn-primary" href="#plan">Plan a trip with Jondrea →</a>
+          <a class="btn btn-ghost" href="sms:+14046434749">Text (404) 643-4749</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- WHY -->
+  <section id="why">
+    <div class="wrap">
+      <p class="eyebrow">Why book with us</p>
+      <h2>The help of an agent, without the extra cost</h2>
+      <div class="why">
+        <div><h3>One person to contact</h3><p>From the first quote to the trip home, you work with us directly, start to finish.</p></div>
+        <div><h3>Budget comes first</h3><p>Give us your real number and we'll plan around it, not stretch past it.</p></div>
+        <div><h3>Built for families</h3><p>Kids' clubs, connecting rooms, pool time, nap-friendly flights. We think about it so you don't have to.</p></div>
+        <div><h3>Payment plans</h3><p>Many cruises and resorts let you pay a deposit now and the rest over time. We'll set it up.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- HOW IT WORKS + GROUPS -->
+  <section class="alt">
+    <div class="wrap">
+      <p class="eyebrow">How booking works</p><h2>Three simple steps, one real person</h2>
+      <div class="steps" style="margin-top:1.4rem">
+        <div class="step"><div class="num">01</div><h3>Tell us the trip</h3><p>Who's going, where you're dreaming of, rough dates, and a budget range. Use the form below, or just text or email us.</p></div>
+        <div class="step"><div class="num">02</div><h3>Get matched options</h3><p>We compare current promotions on cruises, resorts, packages, and excursions, then send options that fit your family, dates, and budget.</p></div>
+        <div class="step"><div class="num">03</div><h3>Book and travel supported</h3><p>We handle booking, payment schedules, and documents, and stay your point of contact if plans change before or during your trip.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PLAN -->
+  <section id="plan">
+    <div class="wrap">
+      <p class="eyebrow">Plan my trip</p>
+      <h2>Tell us about your trip</h2>
+      <p class="lede">Send your trip request with the form below — it takes a few minutes, goes straight to us (no email app needed), and we usually reply within one business day. Prefer to reach out first? Text or email us using the links below.</p>
+      <div class="contact-strip">
+        <a href="sms:+14046434749">Text (404) 643-4749</a>
+        <a href="mailto:bohemianfamilytravelers@gmail.com">bohemianfamilytravelers@gmail.com</a>
+        <span class="hours">Atlanta, Georgia · By appointment · Replies within one business day</span>
+        <a class="soc" data-social="instagram" href="#" target="_blank" rel="noopener"><svg class="soc-ic" viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5" fill="none" stroke="currentColor" stroke-width="2"/><circle cx="12" cy="12" r="4" fill="none" stroke="currentColor" stroke-width="2"/><circle cx="17.3" cy="6.7" r="1.2" fill="currentColor"/></svg><span>Instagram</span></a><a class="soc" data-social="facebook" href="#" target="_blank" rel="noopener" hidden><svg class="soc-ic" viewBox="0 0 24 24" aria-hidden="true"><path d="M14 8h3V4h-3c-2.8 0-4.5 1.8-4.5 4.6V11H7v4h2.5v6h4v-6h3l.5-4h-3.5V9c0-.6.4-1 1-1z" fill="currentColor"/></svg><span>Facebook</span></a>
+      </div>
+      <div class="notice" id="dealContext" hidden style="margin-top:1.2rem">
+        <strong>Your pick is noted.</strong> <span id="dealContextText"></span>
+      </div>
+      <div style="margin-top:1.4rem">
+        <iframe id="tripFormFrame" class="gform-frame" src="https://docs.google.com/forms/d/e/1FAIpQLSc2SF2shRrlk8Vhw_NcSR6I8x9u71015aDMULjGBfP2D_j4xw/viewform?embedded=true" height="1650" title="Bohemian Family Travelers — Trip Request form" loading="lazy">Loading the trip request form…</iframe>
+      </div>
+      <p class="small" style="margin-top:.8rem">The form asks for your full legal name (as on your passport) and preferred name, email, phone for texting, destination, trip idea, travel dates, number of travelers, budget, departure airport, preferred airline, loyalty programs, passport validity, cabin and seat preference, travel protection interest, and notes about your trip. If the embedded form does not load, <a href="https://docs.google.com/forms/d/e/1FAIpQLSc2SF2shRrlk8Vhw_NcSR6I8x9u71015aDMULjGBfP2D_j4xw/viewform" target="_blank" rel="noopener">open the trip request form in a new tab ↗</a>.</p>
+    </div>
+  </section>
+
+  <!-- SEARCH FOR YOURSELF -->
+  <section id="self-search" class="alt">
+    <div class="wrap">
+      <p class="eyebrow">Search for yourself</p>
+      <h2>Like to browse trips yourself? Go right ahead.</h2>
+      <p class="lede">Our booking site lets you search cruises, resorts, flights, and packages on your own, whenever you like. Book through that site and your trip is still credited to Bohemian Family Travelers — so you get the freedom to browse, with a real advisor in your corner. Not sure about an option, or want us to check a price before you book? Text <a href="sms:+14046434749">(404) 643-4749</a> or email <a href="mailto:bohemianfamilytravelers@gmail.com">bohemianfamilytravelers@gmail.com</a> and we&rsquo;ll help.</p>
+      <div class="hero-ctas">
+        <a class="btn btn-primary" href="https://jondreawilliams.inteletravel.com/" target="_blank" rel="noopener">Search trips on our booking site ↗</a>
+        <a class="btn btn-ghost" href="#plan">Or let us plan it for you →</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- NEWSLETTER -->
+  <section id="newsletter">
+    <div class="wrap">
+      <p class="eyebrow">Stay in the loop</p>
+      <h2>Trip ideas and deals, by email</h2>
+      <p class="lede">Join the Bohemian Family Travelers newsletter for new promotions, group trip announcements, and travel tips. Just your name and email — unsubscribe anytime.</p>
+      <div style="margin-top:1.4rem;max-width:760px">
+        <iframe class="gform-frame" src="https://docs.google.com/forms/d/e/1FAIpQLSdR5ZdKFdMJN6UX3lJ3ldr7C3Hd6KXD3fEDpI7Ebwih_eIqPA/viewform?embedded=true" height="620" title="Bohemian Family Travelers — Newsletter Signup form" loading="lazy">Loading the newsletter signup form…</iframe>
+      </div>
+      <p class="small" style="margin-top:.8rem">If the embedded form does not load, <a href="https://docs.google.com/forms/d/e/1FAIpQLSdR5ZdKFdMJN6UX3lJ3ldr7C3Hd6KXD3fEDpI7Ebwih_eIqPA/viewform" target="_blank" rel="noopener">open the newsletter signup in a new tab ↗</a>.</p>
+    </div>
+  </section>
+
+  <!-- TOOLS -->
+  <section id="tools" class="alt">
+    <div class="wrap">
+      <p class="eyebrow">Travel tools</p>
+      <h2>Handy links before you go</h2>
+      <div class="tools-grid">
+        <a href="https://travel.state.gov/content/travel/en/traveladvisories/traveladvisories.html" target="_blank" rel="noopener"><strong>Travel advisories</strong><span>U.S. State Department safety info by country</span></a>
+        <a href="https://cibtvisas.com/?login=inteletravel" target="_blank" rel="noopener"><strong>Passports &amp; visas</strong><span>CIBTvisas, with discounted service fees through InteleTravel</span></a>
+        <a href="https://www.flightaware.com/live/" target="_blank" rel="noopener"><strong>Flight tracker</strong><span>Check delays and gate changes live</span></a>
+        <a href="https://www.farecompare.com/destinations/airline-baggage-fees/" target="_blank" rel="noopener"><strong>Baggage fees</strong><span>Compare luggage limits by airline</span></a>
+        <a href="https://www.aerolopa.com/" target="_blank" rel="noopener"><strong>Airline seat maps</strong><span>Pick seats that keep the family together</span></a>
+        <a href="https://www.accuweather.com/" target="_blank" rel="noopener"><strong>Weather</strong><span>Forecasts for your destination</span></a>
+        <a href="https://www.xe.com/currencyconverter/" target="_blank" rel="noopener"><strong>Currency converter</strong><span>Know what things cost abroad</span></a>
+        <a href="https://www.worldtimeserver.com/" target="_blank" rel="noopener"><strong>World clock</strong><span>Time differences for checking in at home</span></a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section>
+    <div class="wrap">
+      <p class="eyebrow">Questions</p><h2>Before you book</h2>
+      <div style="margin-top:1.2rem">
+        <details><summary>Does booking through Bohemian Family Travelers cost more?</summary><p>Usually not. You typically pay the supplier's regular price for the trip, and you get personal help matching promotions and options to your dates. If a planning fee ever applies to a complex itinerary, we agree on it with you up front. <a href="https://blog.inteletravel.com/how-much-does-a-travel-agent-cost" target="_blank" rel="noopener">Read: How much does a travel agent cost? ↗</a></p></details>
+        <details><summary>Can you plan a trip on a tight budget?</summary><p>Yes. Tell us your real number and we'll show you what it can do, whether that's a short cruise, an off-season all-inclusive, or a road trip closer to home. We'll also flag ways to save, like flexible dates and payment plans.</p></details>
+        <details><summary>Are the promotions on this page live?</summary><p>They're a hand-picked list of current offers from the suppliers we book through. Deal buttons don't take you to a supplier's checkout — they open the trip form with the deal noted, and we confirm the current price for your dates before any payment.</p></details>
+        <details><summary>Do you plan group trips?</summary><p>Yes: family reunions, milestone celebrations, destination weddings, and group cruises. Groups have their own deadlines and rules, so starting early makes a real difference.</p></details>
+        <details><summary>How do I ask about a deal I saw here?</summary><p>Tap the deal's button — it takes you to the trip form with the deal already noted at the top and pre-filled in the form's notes. Add your details and send it. You can also text (404) 643-4749 or email bohemianfamilytravelers@gmail.com with the deal name. We'll check it across our suppliers and reply with options and a confirmed price before anything is booked.</p></details>
+      </div>
+    </div>
+  </section>
+
+  <!-- TRAVEL DOCUMENTS -->
+  <section id="documents" class="alt">
+    <div class="wrap">
+      <p class="eyebrow">Travel document basics</p>
+      <h2>What your family needs to bring</h2>
+      <div class="docs">
+        <div class="doc"><h3>Passports for kids</h3><p>Every traveler, babies included, needs their own passport for international flights. Child passports (under 16) last 5 years and usually need both parents to apply. Start a few months ahead.</p></div>
+        <div class="doc"><h3>Closed-loop cruises</h3><p>Sailing round trip from a U.S. port to the Bahamas, Caribbean, Mexico, Canada, or Bermuda? U.S. citizens can usually use a birth certificate, plus photo ID for ages 16 and up. We still recommend passports in case you need to fly home from a foreign port.</p></div>
+        <div class="doc"><h3>Flying to Mexico or the Caribbean</h3><p>International flights require a passport book. We recommend at least 6 months left before it expires, and checking it as soon as you book.</p></div>
+        <div class="doc"><h3>Puerto Rico &amp; the U.S. Virgin Islands</h3><p>No passport needed for U.S. citizens. Bring the same ID you'd use for a flight within the U.S.</p></div>
+        <div class="doc"><h3>REAL ID for U.S. flights</h3><p>Since May 7, 2025, adults 18 and older need a REAL ID–compliant license (look for the star) or a passport at airport security. TSA doesn't require ID for kids under 18 traveling with an adult.</p></div>
+        <div class="doc"><h3>Kids traveling with one parent</h3><p>Bring a signed consent letter from the parent who isn't traveling. Some countries, airlines, and cruise lines ask for one, and a few cruise lines require passports for kids sailing with one adult.</p></div>
+      </div>
+      <p class="small" style="margin-top:1.2rem">Rules change. We'll confirm the requirements for your trip, and you can always check <a href="https://travel.state.gov/" target="_blank" rel="noopener">travel.state.gov</a> and <a href="https://www.tsa.gov/" target="_blank" rel="noopener">tsa.gov</a>.</p>
+    </div>
+  </section>
+
+  <!-- TERMS OF USE -->
+  <section id="terms" class="alt">
+    <div class="wrap">
+      <p class="eyebrow">The fine print, in plain language</p>
+      <h2>Terms of Use</h2>
+      <div class="terms-body">
+        <div><h3>Who we are</h3><p>Bohemian Family Travelers is a travel agency based in Atlanta, Georgia, operated by Jondrea Williams, a CLIA-certified independent travel advisor affiliated with InteleTravel. We plan and book trips for our clients — we do not operate the cruises, resorts, flights, or tours themselves.</p></div>
+        <div><h3>Bookings are made through suppliers</h3><p>Every trip is booked through third-party suppliers such as cruise lines, resorts and hotels, airlines, and tour operators. Your booking is also subject to that supplier&rsquo;s own terms and conditions, which we will share with you before you book.</p></div>
+        <div><h3>Prices are not guaranteed until confirmed</h3><p>Prices, availability, and promotions change constantly and are not guaranteed until your booking is confirmed in writing and any required deposit has been paid. The price we confirm with you in writing is the price that applies.</p></div>
+        <div><h3>Deposits, payments, cancellations &amp; changes</h3><p>Deposit amounts, payment schedules, and final payment dates are set by the supplier. Cancellation and change fees also follow the supplier&rsquo;s terms, and some fares and rates are non-refundable. We will explain the deposit, deadlines, and cancellation terms for your trip before you book, and send reminders before payments are due.</p></div>
+        <div><h3>Your travel documents are your responsibility</h3><p>Each traveler is responsible for having the documents their trip requires — a valid passport (for most international trips, valid at least 6 months past your return date), visas, and government ID — and for the accuracy of the names and details provided for booking. We will tell you what your trip requires, but please check your documents as soon as you book.</p></div>
+        <div><h3>Travel protection is recommended</h3><p>We strongly recommend travel protection for every trip, and we will offer it when we quote you. If you choose to travel without it, you accept the financial risk of cancellations, delays, medical costs, and other events the protection would have covered.</p></div>
+        <div><h3>Changes outside our control</h3><p>Suppliers may change itineraries, schedules, ships, hotels, or prices, and weather, delays, and other events outside anyone&rsquo;s control can affect a trip. Bohemian Family Travelers is not liable for supplier changes, cancellations, weather, delays, or losses that result from them — but we will always help you rebook, adjust, or find alternatives when they happen.</p></div>
+        <div><h3>Contact us</h3><p>Questions about these terms or your booking? Text <a href="sms:+14046434749">(404) 643-4749</a> or email <a href="mailto:bohemianfamilytravelers@gmail.com">bohemianfamilytravelers@gmail.com</a>. Atlanta, Georgia · By appointment.</p></div>
+      </div>
+      <p class="small" style="margin-top:1.2rem">These terms are a plain-language summary of how we work. They are not legal advice.</p>
+    </div>
+  </section>
+
+  <!-- PRIVACY -->
+  <section id="privacy" class="privacy">
+    <div class="wrap">
+      <details id="privacyDetails">
+        <summary>Privacy Policy</summary>
+        <div class="privacy-body">
+          <p><strong>Effective November 5, 2026.</strong> Bohemian Family Travelers ("we") respects your privacy. This policy explains what we collect and how we use it.</p>
+          <h3>What we collect</h3>
+          <p>Information you choose to give us, such as your name, phone number, email, travel dates, budget, and who is traveling. When you book, we also collect what suppliers require, such as legal names, dates of birth, passport details, and special needs.</p>
+          <h3>How we use it</h3>
+          <p>Only to plan, quote, and book your trip, to contact you about it, and to send travel updates or offers you ask for. We share booking details only with the companies needed to complete your booking (for example cruise lines, resorts, airlines, tour operators, and travel protection providers) and with our host agency, InteleTravel.</p>
+          <h3>What we don't do</h3>
+          <p>We never sell or rent your personal information. Payments are made through suppliers' secure systems; we don't store your card details on this website.</p>
+          <h3>Children's information</h3>
+          <p>We collect information about children only from their parent or guardian, and only to book their travel.</p>
+          <h3>Other websites</h3>
+          <p>This site links to booking sites, suppliers, and social media. Those sites have their own privacy policies.</p>
+          <h3>Your choices</h3>
+          <p>You can ask us to update or delete your information, or stop sending you offers, at any time by emailing bohemianfamilytravelers@gmail.com or texting (404) 643-4749.</p>
+        </div>
+      </details>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap footgrid">
+    <div>
+      <h3 style="color:#fff;font-size:1.4rem">Bohemian Family Travelers</h3>
+      <p class="small" style="margin-top:.5rem">Family cruises, all-inclusive resorts, budget-friendly getaways, and group travel, planned personally.</p>
+      <p style="margin-top:.7rem"><a href="sms:+14046434749">Text (404) 643-4749</a><br><a href="mailto:bohemianfamilytravelers@gmail.com">bohemianfamilytravelers@gmail.com</a><br><span class="small">Atlanta, Georgia · By appointment</span></p>
+      <p class="foot-soc"><a class="soc" data-social="instagram" href="#" target="_blank" rel="noopener"><svg class="soc-ic" viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5" fill="none" stroke="currentColor" stroke-width="2"/><circle cx="12" cy="12" r="4" fill="none" stroke="currentColor" stroke-width="2"/><circle cx="17.3" cy="6.7" r="1.2" fill="currentColor"/></svg><span>Instagram</span></a><a class="soc" data-social="facebook" href="#" target="_blank" rel="noopener" hidden><svg class="soc-ic" viewBox="0 0 24 24" aria-hidden="true"><path d="M14 8h3V4h-3c-2.8 0-4.5 1.8-4.5 4.6V11H7v4h2.5v6h4v-6h3l.5-4h-3.5V9c0-.6.4-1 1-1z" fill="currentColor"/></svg><span>Facebook</span></a></p>
+    </div>
+    <div>
+      <h3 style="color:#fff;font-family:Outfit,sans-serif;font-weight:800;font-size:1rem">Explore</h3>
+      <p><a href="#destinations">Trips</a><br><a href="#groups">Group trips</a><br><a href="#protection">Travel protection</a><br><a href="#documents">Travel documents</a><br><a href="#promotions">Promotions</a><br><a href="#branchup">BranchUp updates</a><br><a href="#excursions">Excursions &amp; tours</a><br><a href="#plan">Plan my trip</a></p>
+    </div>
+  </div>
+  <div class="wrap host">
+    <span class="host-label">CLIA-certified · Independent Travel Agent affiliated with</span>
+    <img id="hostLogo" alt="InteleTravel" hidden>
+    <span class="host-name" id="hostName">InteleTravel</span>
+  </div>
+  <div class="wrap" style="margin-top:1.2rem;border-top:1px solid rgba(255,255,255,.18);padding-top:1rem">
+    <p class="small"><a href="#privacy" id="privacyLink">Privacy Policy</a> · <a href="#terms">Terms of Use</a></p>
+    <p class="small" style="margin-top:.4rem">All offers are subject to availability; we confirm the current price and the supplier's terms with you before anything is booked. Trip photos are from real Bohemian Family Travelers trips.</p>
+  </div>
+</footer>
+
+<nav class="mobile-bar" aria-label="Quick contact">
+  <a href="sms:+14046434749">Text</a>
+  <a href="mailto:bohemianfamilytravelers@gmail.com">Email</a>
+  <a class="mb-primary" href="#plan">Plan my trip</a>
+</nav>
+
+<script>
+/* =====================================================================
+   EDIT YOUR LINKS HERE
+   Paste your InteleTravel / agent-tracked booking links between the quotes.
+   Any link left empty keeps the public supplier page.
+   ===================================================================== */
+var MY_LINKS = {
+  bookingSite:           'https://jondreawilliams.inteletravel.com/',  // Your InteleTravel booking site
+  cruiseSearch:          'https://jondreawilliams.inteletravel.com/',  // InteleTravel cruise search (used on "Family cruises" card)
+  carnival:              '',  // Your Carnival agent link
+  vacationExpress:       '',  // Your Vacation Express agent link (last-minute deals)
+  vacationExpressCancun: '',  // Your Vacation Express Cancún link
+  vacationExpressAtlanta:'',  // Your Vacation Express Atlanta deals link
+  inclusiveCollection:   '',  // Your ALG Vacations / Inclusive Collection agent link
+  flights:               'https://jondreawilliams.inteletravel.com/',  // InteleTravel flight booking link
+  insurance:             'https://www.etravelprotection.com/allianz/home',  // Allianz travel protection (change per trip if needed)
+  themeParks:            ''   // Theme park tickets / booking link
+};
+
+/* SOCIAL MEDIA: paste your page links. Empty ones stay hidden. */
+var SOCIAL = {
+  instagram: 'https://www.instagram.com/bohemianfamilytravelers/',
+  facebook:  'https://www.facebook.com/share/1CkqLxqvtT/'
+};
+
+/* InteleTravel logo: paste the image file name or address (from InteleTravel's marketing page). */
+var INTELETRAVEL_LOGO = 'assets/inteletravel-logo.png';
+
+/* Your Shore Excursions Group agent ID (the number InteleTravel gives you).
+   When filled in, it's added to every shore excursion link so bookings are credited to you. */
+var SEG_AGENT_ID = '';
+
+/* =====================================================================
+   HOT DEALS  (update anytime from InteleTravel Hot Deals, BranchUp, or supplier emails)
+   Each deal is one { ... } block. Copy a block, change the words, paste a link.
+     brand:  who it's from          title: the offer name
+     text:   one or two sentences   tag:   short label (Cruise, All-inclusive, Tour...)
+     link:   kept for reference only — deal buttons always go to the trip
+             request form (#plan), never out to a supplier's deal page, so
+             the deal can be compared across suppliers before booking.
+   Delete a block when the deal ends.
+   ===================================================================== */
+var HOT_DEALS = [
+  { brand:'Beaches Resorts', title:'Black Friday, Unlocked', tag:'All-inclusive · Family', text:'Black Friday savings at Beaches all-inclusive family resorts, with kids\u2019 camps and water parks included. Ask us to price your dates.', link:'' },
+  { brand:'Sandals Resorts', title:'Black Friday, Unlocked', tag:'All-inclusive · Couples', text:'Black Friday savings at Sandals adults-only resorts. A great pick for anniversaries and parents\u2019 getaways.', link:'' },
+  { brand:'Princess Cruises', title:'Fall Savings Sale', tag:'Cruise', text:'Seasonal savings on Princess sailings. Tell us your dates and we\u2019ll find the best fare and cabin for your group.', link:'' },
+  { brand:'Holland America Line', title:'Save on Caribbean Escapes', tag:'Cruise', text:'Savings on Caribbean sailings with Holland America. Ask us which itineraries fit your family.', link:'' },
+  { brand:'Oceania Cruises', title:'Black Friday Early Access', tag:'Cruise', text:'Early access to Black Friday offers on Oceania\u2019s smaller ships and food-focused itineraries.', link:'' },
+  { brand:'Major Travel', title:'La Dolce Vita: Rome, Sorrento &amp; the Amalfi Coast', tag:'Escorted tour', text:'A small-group escorted tour of Italy. Ask us for current dates and pricing.', link:'' }
+];
+
+/* Trip interest form (InteleSpark or Google Form). Paste the link and the button appears. */
+var INTEREST_FORM_URL = '';
+
+(function(){
+  if(INTELETRAVEL_LOGO){ var hl=document.getElementById('hostLogo'); hl.src=INTELETRAVEL_LOGO; hl.hidden=false; document.getElementById('hostName').hidden=true; }
+
+  document.querySelectorAll('[data-social]').forEach(function(a){ var u=SOCIAL[a.getAttribute('data-social')]; if(u){ a.href=u; a.hidden=false; } else { a.hidden=true; } });
+
+  // Apply agent links
+  document.querySelectorAll('[data-link]').forEach(function(a){
+    var url = MY_LINKS[a.getAttribute('data-link')];
+    if(url){ a.href = url; a.target = '_blank'; a.rel = 'noopener'; }
+  });
+  if(SEG_AGENT_ID){
+    document.querySelectorAll('a[data-seg]').forEach(function(a){
+      try{ var u = new URL(a.href); u.searchParams.set('id', SEG_AGENT_ID); a.href = u.toString(); }catch(e){}
+    });
+  }
+
+  // Hot deals
+  if(HOT_DEALS.length){
+    var esc = function(s){ var d=document.createElement('div'); d.innerHTML=s||''; var t=d.textContent; d.textContent=t; return d.innerHTML; };
+    document.getElementById('featuredGrid').innerHTML = HOT_DEALS.map(function(p){
+      // Deals always route to the trip form, never to a supplier's deal page.
+      return '<article class="card deal-card"><div class="card-body"><span class="tag">'+esc(p.tag||'Hot deal')+'</span>' +
+        '<p class="deal-brand">'+esc(p.brand)+'</p><h3>'+esc(p.title)+'</h3><p>'+esc(p.text)+'</p>' +
+        '<a class="btn btn-primary" href="#plan" data-ask-deal="'+esc((p.brand||'')+' — '+(p.title||''))+'">Ask about this deal →</a></div></article>';
+    }).join('');
+    document.getElementById('featuredWrap').hidden = false;
+  }
+  if(INTEREST_FORM_URL){ var il=document.getElementById('interestLink'), iw=document.getElementById('interestWrap'); if(il&&iw){ il.href=INTEREST_FORM_URL; iw.hidden=false; } }
+  function openPrivacy(){ if(location.hash==='#privacy'){ document.getElementById('privacyDetails').open=true; } }
+  window.addEventListener('hashchange',openPrivacy); openPrivacy();
+  document.getElementById('privacyLink').addEventListener('click',function(){ document.getElementById('privacyDetails').open=true; });
+
+  // Trip filter
+  var dBtns=document.querySelectorAll('[data-filter]');
+  dBtns.forEach(function(b){ b.addEventListener('click',function(){
+    dBtns.forEach(function(x){x.setAttribute('aria-pressed','false')}); b.setAttribute('aria-pressed','true');
+    var f=b.getAttribute('data-filter'), shown=0;
+    document.querySelectorAll('#destGrid .card').forEach(function(c){
+      var show=f==='all'||(c.getAttribute('data-kind')||'').split(' ').indexOf(f)>-1;
+      c.classList.toggle('hidden',!show); if(show) shown++;
+    });
+    document.getElementById('destEmpty').hidden = shown>0;
+  });});
+
+  // Promo filter
+  var pBtns=document.querySelectorAll('[data-pfilter]');
+  pBtns.forEach(function(b){ b.addEventListener('click',function(){
+    pBtns.forEach(function(x){x.setAttribute('aria-pressed','false')}); b.setAttribute('aria-pressed','true');
+    var f=b.getAttribute('data-pfilter');
+    document.querySelectorAll('#promoGrid .card').forEach(function(c){
+      c.classList.toggle('hidden',!(f==='all'||(c.getAttribute('data-pkind')||'').split(' ').indexOf(f)>-1));
+    });
+  });});
+
+  // Destination -> deals: banner in Promotions + preset the form destination
+  var dealBanner=document.getElementById('dealForBanner'), dealBannerText=document.getElementById('dealForText');
+  document.querySelectorAll('[data-dest-deals]').forEach(function(a){ a.addEventListener('click',function(){
+    var dest=a.getAttribute('data-dest-deals'), label=a.getAttribute('data-dest-label')||dest;
+    if(dealBanner&&dealBannerText){
+      dealBannerText.textContent='You picked '+label+'. The deals below are the current offers that can fit that trip — pick one and its button takes you to the trip form, where we\u2019ll compare suppliers for your dates, not just one booking site.';
+      dealBanner.hidden=false;
+    }
+    setTripContext(dest, label, '');
+  });});
+
+  // Deals -> form: write the chosen deal into the trip request notes
+  function askDeal(name){
+    if(!name) return;
+    setTripContext('', '', name);
+  }
+  document.querySelectorAll('[data-ask-deal]').forEach(function(a){ a.addEventListener('click',function(){ askDeal(a.getAttribute('data-ask-deal')); }); });
+  var featuredGrid=document.getElementById('featuredGrid');
+  if(featuredGrid){ featuredGrid.addEventListener('click',function(e){ var a=e.target.closest?e.target.closest('[data-ask-deal]'):null; if(a){ askDeal(a.getAttribute('data-ask-deal')); } }); }
+
+  // Google Form trip request: pre-fill the destination and deal picks using the
+  // form's own pre-fill parameters (entry IDs read from the published form),
+  // and flag the picks in a banner above the embedded form.
+  var TRIP_FORM_URL='https://docs.google.com/forms/d/e/1FAIpQLSc2SF2shRrlk8Vhw_NcSR6I8x9u71015aDMULjGBfP2D_j4xw/viewform';
+  var pickedDest='', pickedLabel='', pickedDeal='';
+  function setTripContext(dest, label, deal){
+    if(dest){ pickedDest=dest; pickedLabel=label||dest; }
+    if(deal) pickedDeal=deal;
+    var box=document.getElementById('dealContext'), txt=document.getElementById('dealContextText'), frame=document.getElementById('tripFormFrame');
+    var parts=[];
+    if(pickedDest) parts.push(pickedLabel);
+    if(pickedDeal) parts.push(pickedDeal);
+    if(box&&txt&&parts.length){
+      txt.textContent='We have noted '+parts.join(' and ')+' and pre-filled it in the trip request form below. Just add your details and send it, and we will confirm the current price across our suppliers for your dates.';
+      box.hidden=false;
+    }
+    if(frame){
+      var params=[];
+      if(pickedDest) params.push('entry.787875101='+encodeURIComponent(pickedDest));
+      if(pickedDeal) params.push('entry.1278400693='+encodeURIComponent('Interested in: '+pickedDeal+'. Please check this deal across your suppliers and confirm the current price for my dates.'));
+      var src=TRIP_FORM_URL+'?embedded=true'+(params.length?'&usp=pp_url&'+params.join('&'):'');
+      if(frame.getAttribute('src')!==src) frame.src=src;
+    }
+  }
+})();
+</script>
+</body>
+</html>
