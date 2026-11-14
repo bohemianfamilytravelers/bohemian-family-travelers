@@ -79,6 +79,16 @@ section{padding:3.4rem 0}
 .tag{display:inline-block;background:var(--chip);border:1px solid var(--line);padding:.22rem .55rem;border-radius:999px;font-size:.75rem;font-weight:700;letter-spacing:.04em;text-transform:uppercase}
 .card-link{font-weight:800;text-decoration:none}
 .promo-meta{font-size:.86rem;color:var(--muted);border-top:1px dashed var(--line);padding-top:.7rem;margin-top:.8rem}
+.deal-details{background:transparent;border:0;border-radius:0;padding:0;margin:.15rem 0 .95rem;box-shadow:none}
+.deal-details summary{font-weight:700;font-size:.92rem;color:var(--teal2);cursor:pointer;text-decoration:underline;text-underline-offset:3px;list-style:none;display:inline-block}
+.deal-details summary::-webkit-details-marker{display:none}
+.deal-details summary:hover{color:var(--terra)}
+.deal-details p{font-size:.92rem;margin:.55rem 0 0}
+.promo-wide .deal-details{background:transparent;border:0}
+.promo-wide .deal-details summary{color:#f2c979}
+.promo-wide .deal-details summary:hover{color:#fff}
+.promo-wide .deal-details p{color:#d9e9e5}
+@media(prefers-color-scheme:dark){.deal-details summary{color:#7fc7bb}.promo-wide .deal-details summary{color:#f2c979}}
 .price{font-size:1.5rem;font-weight:800;color:var(--teal)} @media(prefers-color-scheme:dark){.price{color:#8fd0c4}}
 /* Shore */
 .shore{display:grid;grid-template-columns:1.05fr .95fr;gap:1.4rem;align-items:stretch}
@@ -527,17 +537,17 @@ footer a{color:#f2c979}
       <div class="grid grid-2" id="promoGrid">
         <article class="card promo-wide" data-pkind="cruise">
           <div class="card-body">
-            <span class="tag">Celebrity Cruises · Cruises · Book by Nov 9</span>
+            <span class="tag">Celebrity Cruises · Cruises · Book by Dec 7</span>
             <h3>Celebrity Cruises — November Cruise Partner of the Month</h3>
             <p>Celebrity is InteleTravel&rsquo;s November Cruise Partner of the Month, and its offers run out in this order — the soonest first:</p>
             <ul style="margin:.2rem 0 .9rem;padding-left:1.2rem;display:grid;gap:.45rem">
-              <li><strong>Last-minute sailings — book by Mon, Nov 9, 2026.</strong> Select sailings from $263 per person.</li>
+              <li style="text-decoration:line-through"><strong>Ended Nov 9 — Last-minute sailings — book by Mon, Nov 9, 2026.</strong> Select sailings from $263 per person.</li>
               <li><strong>Black Friday — book by Dec 7, 2026.</strong> Up to 75% off the 2nd guest, up to $1,200 in savings or up to $850 onboard credit per stateroom, 3rd, 4th &amp; 5th guests sail free on select sailings, and up to $600 per person off flights for select Europe, Alaska, and Caribbean cruises.</li>
               <li><strong>Black Friday river sale — book by Dec 7, 2026.</strong> Up to 75% off the 2nd guest plus up to $1,000 air credit per person on 2028 river sailings.</li>
               <li><strong>Galapagos — book Dec 27&ndash;31, 2026.</strong> 20% off, flights included on select packages, and 50% off the 2nd guest.</li>
             </ul>
-            <a class="btn btn-primary" href="#plan" data-ask-deal="Celebrity Cruises — November Cruise Partner of the Month (last-minute sailings from $263 per person, book by Nov 9; Black Friday offers, book by Dec 7)">Ask about Celebrity Cruises →</a>
-            <p class="promo-meta" style="color:#bcd3cd;border-top-color:rgba(255,255,255,.25)">Offers as stated in InteleTravel&rsquo;s Nov 6, 2026 email. Send the trip form and we&rsquo;ll confirm the current fare and availability for your dates before anything is booked.</p>
+            <details class="deal-details"><summary>See details</summary><p>Offers as stated in InteleTravel&rsquo;s Nov 6, 2026 email. Send the trip form and we&rsquo;ll confirm the current fare and availability for your dates before anything is booked.</p></details>
+            <a class="btn btn-primary" href="#plan" data-ask-deal="Celebrity Cruises — November Cruise Partner of the Month (Black Friday offers, book by Dec 7)">Ask about Celebrity Cruises →</a>
           </div>
         </article>
         <article class="card promo-wide" data-pkind="resort cruise">
@@ -545,6 +555,7 @@ footer a{color:#f2c979}
             <span class="tag">Updated weekly · Multiple suppliers</span>
             <h3>This week's hot deals</h3>
             <p>Fresh resort and cruise offers every week from brands like Sandals, Beaches, Princess, Holland America, and Oceania, plus escorted tours in Europe — gathered from the suppliers we book through, not just one site. See the Hot Deals above, pick the one you like, and its button takes you to the trip form so we can price it for your dates.</p>
+            <details class="deal-details"><summary>See details</summary><p>Send the trip form and we&rsquo;ll price this exact deal for your dates, check it against the other suppliers we book through, and confirm the price before you pay anything. No supplier checkout.</p></details>
             <a class="btn btn-primary" href="#plan" data-ask-deal="This week's hot deals">Ask about this week's deals →</a>
           </div>
         </article>
@@ -553,8 +564,8 @@ footer a{color:#f2c979}
             <span class="tag">Packages · Multiple suppliers</span>
             <h3>Last-minute all-inclusive deals</h3>
             <p>Air-inclusive packages to the Caribbean, Mexico, and Central America, with meals, drinks, and activities included at all-inclusive resorts. Vacation Express posts some of these — ALG Vacations and the resort brands post others — so send the trip form and we'll compare them for your departure city and dates instead of sending you to one site.</p>
+            <details class="deal-details"><summary>See details</summary><p>Send us your dates and we'll confirm the current price across suppliers before you book.</p></details>
             <a class="btn btn-teal" href="#plan" data-ask-deal="Last-minute all-inclusive deals">Ask about last-minute deals →</a>
-            <p class="promo-meta">Send us your dates and we'll confirm the current price across suppliers before you book.</p>
           </div>
         </article>
 
@@ -565,8 +576,8 @@ footer a{color:#f2c979}
             <span class="tag">Hyatt Inclusive Collection · Resorts</span>
             <h3>Hyatt all-inclusive resorts</h3>
             <p>Family-friendly Hyatt Ziva, Dreams, and Sunscape, plus adults-only Secrets and Hyatt Zilara, across Mexico, the Caribbean, and Central America. We book these through ALG Vacations with flights, resort, and transfers in one package.</p>
+            <details class="deal-details"><summary>See details</summary><p>Tell us the resort style you like and your dates in the form, and we'll quote the full package.</p></details>
             <a class="btn btn-teal" href="#plan" data-ask-deal="Hyatt all-inclusive resorts (Hyatt Ziva, Dreams, Sunscape, Secrets, Hyatt Zilara)">Ask about Hyatt resorts →</a>
-            <p class="promo-meta">Tell us the resort style you like and your dates in the form, and we'll quote the full package.</p>
           </div>
         </article>
         <article class="card" data-pkind="cruise">
@@ -574,8 +585,8 @@ footer a{color:#f2c979}
             <span class="tag">Carnival · Cruises</span>
             <h3>Carnival cruise deals</h3>
             <p>Carnival sailings to the Caribbean, Bahamas, Mexico, and Alaska — and we compare them with Princess, Holland America, and other lines on the same routes. Send the form and we'll match cabins, group rates, and excursion add-ons to your dates.</p>
+            <details class="deal-details"><summary>See details</summary><p>We confirm the live fare, taxes, and fees with you before anything is booked.</p></details>
             <a class="btn btn-teal" href="#plan" data-ask-deal="Carnival cruise deals">Ask about cruise deals →</a>
-            <p class="promo-meta">We confirm the live fare, taxes, and fees with you before anything is booked.</p>
           </div>
         </article>
 
@@ -585,8 +596,8 @@ footer a{color:#f2c979}
             <span class="tag">Shore Excursions · Viator</span>
             <h3>Tours that make every stop count</h3>
             <p>Two kinds of days out, two ways to book them. Cruise port days go through Shore Excursions, matched to your sailing — send the trip form and we&rsquo;ll line them up. Tours in a destination you&rsquo;re staying in — snorkeling, ruins, food tours, and city days — are booked through Viator.</p>
+            <details class="deal-details"><summary>See details</summary><p>Book early. Popular tours sell out before sailing.</p></details>
             <a class="btn btn-teal" href="#excursions">See how excursions &amp; tours work ↓</a>
-            <p class="promo-meta">Book early. Popular tours sell out before sailing.</p>
           </div>
         </article>
       </div>
@@ -1006,12 +1017,18 @@ var SEG_AGENT_ID = '';
    Delete a block when the deal ends.
    ===================================================================== */
 var HOT_DEALS = [
-  { brand:'Beaches Resorts', title:'Black Friday, Unlocked', tag:'All-inclusive · Family', text:'Black Friday savings at Beaches all-inclusive family resorts, with kids\u2019 camps and water parks included. Ask us to price your dates.', link:'' },
-  { brand:'Sandals Resorts', title:'Black Friday, Unlocked', tag:'All-inclusive · Couples', text:'Black Friday savings at Sandals adults-only resorts. A great pick for anniversaries and parents\u2019 getaways.', link:'' },
-  { brand:'Princess Cruises', title:'Fall Savings Sale', tag:'Cruise', text:'Seasonal savings on Princess sailings. Tell us your dates and we\u2019ll find the best fare and cabin for your group.', link:'' },
-  { brand:'Holland America Line', title:'Save on Caribbean Escapes', tag:'Cruise', text:'Savings on Caribbean sailings with Holland America. Ask us which itineraries fit your family.', link:'' },
-  { brand:'Oceania Cruises', title:'Black Friday Early Access', tag:'Cruise', text:'Early access to Black Friday offers on Oceania\u2019s smaller ships and food-focused itineraries.', link:'' },
-  { brand:'Major Travel', title:'La Dolce Vita: Rome, Sorrento &amp; the Amalfi Coast', tag:'Escorted tour', text:'A small-group escorted tour of Italy. Ask us for current dates and pricing.', link:'' }
+  { brand:'ALG Vacations', title:'Early Black Friday Doorbusters', tag:'Resorts & packages · Book by Nov 19, 2026', text:'Early Black Friday doorbuster savings on vacation packages — book by Nov 19, 2026.', details:'Send the trip form and we\u2019ll price this exact deal for your dates, check it against the other suppliers we book through, and confirm the price before you pay anything. No supplier checkout.', link:'' },
+  { brand:'Norwegian', title:'Exclusive $200 onboard credit', tag:'Cruise · Book by Nov 21, 2026', text:'Exclusive $200 onboard credit on Norwegian sailings — book by Nov 21, 2026.', details:'Send the trip form and we\u2019ll price this exact deal for your dates, check it against the other suppliers we book through, and confirm the price before you pay anything. No supplier checkout.', link:'' },
+  { brand:'Carnival', title:'More Savings, More Cruising', tag:'Cruise · Book by Nov 30, 2026', text:'More Savings, More Cruising — Carnival\u2019s offer — book by Nov 30, 2026.', details:'Send the trip form and we\u2019ll price this exact deal for your dates, check it against the other suppliers we book through, and confirm the price before you pay anything. No supplier checkout.', link:'' },
+  { brand:'Goway', title:'Tailor-Made Black Friday Savings', tag:'Tour · Book by Nov 30, 2026', text:'Tailor-Made Black Friday Savings on Goway trips — book by Nov 30, 2026.', details:'Send the trip form and we\u2019ll price this exact deal for your dates, check it against the other suppliers we book through, and confirm the price before you pay anything. No supplier checkout.', link:'' },
+  { brand:'Sandals Resorts', title:'Black Friday, Unlocked', tag:'All-inclusive · Couples · Book by Dec 1, 2026', text:'Black Friday, Unlocked at Sandals Resorts — book by Dec 1, 2026.', details:'Send the trip form and we\u2019ll price this exact deal for your dates, check it against the other suppliers we book through, and confirm the price before you pay anything. No supplier checkout.', link:'' },
+  { brand:'Royal Caribbean', title:'Black Friday Mega Deals', tag:'Cruise · Book by Dec 1, 2026', text:'Black Friday Mega Deals on Royal Caribbean sailings — book by Dec 1, 2026.', details:'Send the trip form and we\u2019ll price this exact deal for your dates, check it against the other suppliers we book through, and confirm the price before you pay anything. No supplier checkout.', link:'' },
+  { brand:'Trafalgar', title:'Black Friday Sale', tag:'Escorted tour · Book by Dec 3, 2026', text:'Black Friday Sale on Trafalgar tours — book by Dec 3, 2026.', details:'Send the trip form and we\u2019ll price this exact deal for your dates, check it against the other suppliers we book through, and confirm the price before you pay anything. No supplier checkout.', link:'' },
+  { brand:'Beaches Resorts', title:'Black Friday, Unlocked', tag:'All-inclusive · Family', text:'Black Friday, Unlocked at Beaches Resorts.', details:'Send the trip form and we\u2019ll price this exact deal for your dates, check it against the other suppliers we book through, and confirm the price before you pay anything. No supplier checkout.', link:'' },
+  { brand:'Princess Cruises', title:'Fall Savings Sale', tag:'Cruise', text:'Fall Savings Sale on Princess Cruises sailings.', details:'Send the trip form and we\u2019ll price this exact deal for your dates, check it against the other suppliers we book through, and confirm the price before you pay anything. No supplier checkout.', link:'' },
+  { brand:'Holland America Line', title:'Save on Caribbean Escapes', tag:'Cruise', text:'Save on Caribbean Escapes with Holland America Line.', details:'Send the trip form and we\u2019ll price this exact deal for your dates, check it against the other suppliers we book through, and confirm the price before you pay anything. No supplier checkout.', link:'' },
+  { brand:'Oceania Cruises', title:'Black Friday Early Access', tag:'Cruise', text:'Black Friday Early Access on Oceania Cruises.', details:'Send the trip form and we\u2019ll price this exact deal for your dates, check it against the other suppliers we book through, and confirm the price before you pay anything. No supplier checkout.', link:'' },
+  { brand:'Major Travel', title:'La Dolce Vita: Rome, Sorrento &amp; the Amalfi Coast', tag:'Escorted tour · Departs Apr 17, 2027', text:'La Dolce Vita — $1,999 per person excluding air, 7 nights, departing Apr 17, 2027: Rome, Sorrento, Pompeii, a Vesuvius vineyard, Capri, and the Amalfi Coast, with 4-star hotels, guides, and breakfast and dinners in Sorrento included. Limited space.', details:'Departs Apr 17, 2027 — 7 nights through Rome, Sorrento, Pompeii, a Vesuvius vineyard, Capri, and the Amalfi Coast, staying in 4-star hotels with guides, and breakfast and dinners in Sorrento included. $1,999 per person excluding air. Limited space — send the trip form and we\u2019ll confirm availability and price before payment.', link:'' }
 ];
 
 /* Trip interest form (InteleSpark or Google Form). Paste the link and the button appears. */
@@ -1042,6 +1059,7 @@ var INTEREST_FORM_URL = '';
       var pkind = /cruise/i.test(ptag) ? 'cruise' : (/tour/i.test(ptag) ? 'tour' : (/all-inclusive|resort|package/i.test(ptag) ? 'resort' : ''));
       return '<article class="card deal-card" data-pkind="'+pkind+'"><div class="card-body"><span class="tag">'+esc(p.tag||'Hot deal')+'</span>' +
         '<p class="deal-brand">'+esc(p.brand)+'</p><h3>'+esc(p.title)+'</h3><p>'+esc(p.text)+'</p>' +
+        '<details class="deal-details"><summary>See details</summary><p>'+esc(p.details||'')+'</p></details>' +
         '<a class="btn btn-primary" href="#plan" data-ask-deal="'+esc((p.brand||'')+' — '+(p.title||''))+'">Ask about this deal →</a></div></article>';
     }).join('');
     document.getElementById('featuredWrap').hidden = false;
